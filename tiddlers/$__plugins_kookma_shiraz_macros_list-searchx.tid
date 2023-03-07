@@ -1,0 +1,22 @@
+created: 20230102153059427
+creator: 马不前
+modified: 20230102153125430
+modifier: 马不前
+tags: $:/tags/Macro
+title: $:/plugins/kookma/shiraz/macros/list-searchx
+type: text/vnd.tiddlywiki
+
+\define list-searchx(filter:[!is[system]] search:'search:title'template:'$:/core/ui/ListItemTemplate'class:my-3 stateTiddler placeholder:keywords)
+<$set filter="[[$:/temp/list-search]addsuffix[/$stateTiddler$]addsuffix<qualify>]"name=state>
+<div class=<<__class__>>>
+<$keyboard actions='<$action-deletetiddler $tiddler=<<state>>/>'key=escape>
+<$edit-text tiddler=<<state>>type=search tag=input default=''placeholder="$placeholder$"class=w-100/>
+</$keyboard>
+</div>
+<$reveal stateTitle=<<state>>stateField=text type=nomatch text=''class=<<__class__>>tag=div>
+<$set name=term tiddler=<<state>>field=text>
+<$list filter="$filter$+[$search$<term>]"template=<<__template__>>/>
+</$set>
+</$reveal>
+
+\end

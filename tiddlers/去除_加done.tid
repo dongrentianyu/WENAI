@@ -1,0 +1,24 @@
+caption: {{svg-done}} 去除?加done
+created: 20230305012013247
+description: 去除?加done
+modified: 20230305042836470
+tags: 自定制的太微 $:/tags/ViewToolbar
+title: 去除?加done
+tmap.id: 33867379-7b27-4e65-aa46-ebe97f5270c5
+type: text/vnd.tiddlywiki
+
+\whitespace trim
+<$fieldmangler>
+<$button 
+    tooltip="去除?加done"
+    aria-label="去除?加done"
+    class=<<tv-config-toolbar-class>>
+    selectedClass="tc-selected"
+		message="tm-add-tag" param="done">
+<$action-sendmessage $message="tm-remove-tag" $param="?"/>
+<$list filter="[<tv-config-toolbar-icons>match[yes]]">
+{{svg-done}}
+</$list>
+<$list filter="[<tv-config-toolbar-text>match[yes]]"><span class="tc-btn-text">去除?加done</span></$list>
+</$button>
+</$fieldmangler>

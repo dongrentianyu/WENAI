@@ -1,0 +1,18 @@
+created: 20230209080654810
+creator: 马不前
+modified: 20230209081017669
+modifier: 马不前
+tags: 插件介绍
+title: context-menu-plugin
+tmap.id: 63a57102-7f71-428b-9e30-bdd07dc9348d
+type: text/vnd.tiddlywiki
+
+`$:/plugins/ahanniga/context-menu-plugin`
+
+这个插件可以实现右键显示页面按钮。挺不错的。如果按钮很多的话，很有作用。
+
+但有两个问题。一个问题是如何把自己制作的按钮放上去。我尝试了，但无法成功，因为插件是通过tm-message字段来控制，所以就搞不了复杂的操作。
+
+另一个问题是，如何在太记里适配，里面提到可以自定义，但需要修改js文件。这就有难度了。如果能出一个选项让用户直接选择就好了。
+
+另，cpl里暂时没有收录。

@@ -1,0 +1,31 @@
+created: 20220911153529405
+modified: 20230305002030875
+modifier: 马不前
+tags: 太微答疑（已解决的）
+title: 如何筛选出标签大于等于两个的条目?
+tmap.id: 66f3cade-c14c-46bd-9a6c-f787c01d69d3
+type: text/vnd.tiddlywiki
+
+<div class="left-column-border">
+
+*如何筛选出标签大于等于两个的条目?
+
+</div>
+
+<div class="right-column-border">
+
+更加简洁的写法：
+
+```
+<$list filter="[all[tiddlers]!is[system]] :filter[tags[]count[]compare:number:gteq[2]]" />  
+```
+
+说明：
+
+```
+[all[tiddlers]!is[system]] 
+```
+
+限定条目为普通条目
+
+</div>

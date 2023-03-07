@@ -1,0 +1,19 @@
+created: 20220917024847968
+modified: 20221202030211012
+modifier: 马不前
+tags: 太微答疑（已解决的）
+title: 如何在每一页里展示反向链接？
+tmap.id: 579c78d3-6d93-4330-9241-41a5a203c499
+type: text/vnd.tiddlywiki
+
+```
+
+<ul><$list filter="[all[current]backlinks[]]">
+<li><$link/>
+</li>
+</$list>
+</ul>
+
+```
+
+通过上述表达式就可以筛选出当前条目的反向链接。当然如果换一下应该也可以。

@@ -1,0 +1,12 @@
+created: 20221212144747859
+creator: 马不前
+modified: 20230112164333709
+modifier: 马不前
+tags: 
+title: 打开列表
+tmap.id: 2f7714d0-70d4-4a32-8d1d-ac478c5600a8
+type: text/vnd.tiddlywiki
+
+<$list filter="[list[$:/StoryList]]" history="$:/HistoryList" storyview="pop">
+<$button message="tm-close-tiddler" class="tc-btn-invisible tc-btn-mini">&times;</$button> <$link><$view field="title"/> <$reveal type="match" state="$:/HistoryList!!current-tiddler" text=<<currentTiddler>>>&#x2713;</$reveal></$link>
+</$list>

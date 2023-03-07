@@ -1,0 +1,27 @@
+caption: Subtiddler
+created: 20221217154204271
+modified: 20221217154204271
+tags: $:/tags/SideBar
+title: $:/xp/ui/SideBar/Subtiddler
+type: text/vnd.tiddlywiki
+
+\import $:/view-subtiddler/macros
+\whitespace trim
+
+\define show-subtiddler()
+\whitespace trim
+<$vars targetTag={{{ [<storeTiddler>get[text]] }}}>
+<div class="xp-vst-titlebar tc-sidebar-lists tc-sidebar-header">
+<<vst-show-button>><span class="tc-tiny-gap">·</span><<vst-openall-button>><span class="tc-tiny-gap">·</span><<vst-delete-button>><span class="tc-tiny-gap">·</span><<vst-close-button>><<vst-count>>
+</div>
+
+<div class="tc-table-of-contents xp-vst-toc">
+<$macrocall $name="tag" tag=<<targetTag>>/>
+<div class="xp-vst-toc-item">
+<$macrocall $name="toc-selective-expandable" tag=<<targetTag>>/>
+</div>
+</div>
+</$vars>
+\end
+
+<<show-subtiddler>>

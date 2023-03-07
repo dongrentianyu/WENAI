@@ -1,0 +1,16 @@
+created: 20220923114233447
+modified: 20221202030211012
+modifier: 马不前
+tags: 太微答疑（已解决的）
+title: 如何列出条目正文中的反向链接
+tmap.id: e6811c00-0503-4870-98cc-95529c7f4733
+type: text/vnd.tiddlywiki
+
+```
+<ul>
+<$list filter="[all[current]backlinks[]]">
+<li><$link/></li>
+</$list>
+</ul>
+```
+上面的代码可以

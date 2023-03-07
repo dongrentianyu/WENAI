@@ -1,0 +1,29 @@
+created: 20220727072734722
+creator: 马不前
+modified: 20230124174523899
+modifier: 马不前
+tags: 编程
+title: css样表
+tmap.id: 3de97240-2427-478d-90f0-cebbddebd6c9
+type: text/vnd.tiddlywiki
+
+<style>
+.shux{
+width:50px;
+
+}
+</style>
+
+css后期可以学习。不过这里学一下太微里的用法。一种是在@@和@@中间写css代码，比如background-color，一种是在开始的style里定义某一个属性，然后通过.属性的形式拓展。然后分别演示一下。
+
+@@.shux
+中间随便写一段文字。
+@@
+
+因为修改了width大小，所以看起来就直接分段了。
+
+@@background-color:white;
+还是随便一段文字。
+@@
+
+多说一句，我不太建议修改全局css，一般的已经够用了。学会css是为了需要展示笔记的时候，或者某些特殊的需求，比如把图片缩小。全局css可能会造成无法修改的后果。

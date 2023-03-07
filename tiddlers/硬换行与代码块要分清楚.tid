@@ -1,0 +1,20 @@
+created: 20220917025727474
+modified: 20221202030211014
+modifier: 马不前
+tags: 太微答疑（已解决的）
+title: 硬换行与代码块要分清楚
+tmap.id: becb4f2a-f493-402e-94af-baed57a9e318
+type: text/vnd.tiddlywiki
+
+具体来说
+
+```
+用```表示的是代码块
+```
+
+
+"""
+用 `"""` 表示的是硬换行
+你看效果就知道了
+"""
+

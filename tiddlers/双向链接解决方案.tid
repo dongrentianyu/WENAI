@@ -1,0 +1,16 @@
+created: 20230207093703035
+creator: 马不前
+modified: 20230301030807863
+modifier: 马不前
+tags: 太微相关资源
+title: 双向链接解决方案
+tmap.id: 1909a4c9-4cdc-46ca-bfbe-d2f9589c6da8
+type: text/vnd.tiddlywiki
+
+[[论坛整理的|https://neighbors.tiddlyhost.com/]]
+
+[[论坛讨论链接|https://talk.tiddlywiki.org/t/nearby-neighbors-a-wikitext-solution/5736]]
+
+实现双链或者多向链接并不难。
+
+里面没有补充到的。[[inverse-link-and-folder]]和[[echarts插件]]，[[TOCgeneric]]应该还有一些其他的，但后续看再补充吧。

@@ -1,0 +1,12 @@
+created: 20230202121849573
+creator: 马不前
+modified: 20230202122000666
+modifier: 马不前
+tags: 
+title: Multi-column Dropdown
+tmap.id: 7438705f-a30c-4721-ba19-5243270358a4
+type: text/vnd.tiddlywiki
+
+https://wikilabs.github.io/editions/multicol-dropdown/
+
+下拉标签列表插件，修改了原本只有一栏的css，后面xp改进了。我后来也做了一个修改的。不过现在我更喜欢自己的quickaddtags。

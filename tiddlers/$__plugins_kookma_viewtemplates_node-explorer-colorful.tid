@@ -1,0 +1,29 @@
+code-body: yes
+created: 20221012093532673
+creator: wubai
+modified: 20230206210539953
+modifier: 马不前
+tags: 
+title: $:/plugins/kookma/viewtemplates/node-explorer-colorful
+type: text/vnd.tiddlywiki
+
+\import $:/plugins/kookma/viewtemplates/node-explorer
+\define subtiddler-pattern() $(currentTiddler)$
+\define type-class() badge p-1 badge-$(type)$
+
+<$list filter="[all[current]get[node-explorer]!match[hide]] [all[current]!has[node-explorer]] :and[!is[system]]" variable=null>
+<$list filter=<<mainFilter>> variable="currentRecord">
+	<$let type={{{ 
+		[all[current]links[]match<currentRecord>then[info text-white]]
+		[all[current]backlinks[]match<currentRecord>then[danger text-white]]
+		[all[current]tagging[]match<currentRecord>then[warning text-dark]]
+		[all[current]tags[]match<currentRecord>then[success text-white]]
+		[<currentRecord>prefix<subtiddler-pattern>then[primary text-white]]
+		:else[<currentRecord>search:text<currentTiddler>then[secondary text-white]else[dark text-white]] 
+		}}} >
+			<$link to=<<currentRecord>> class=<<type-class>> />
+	</$let>
+</$list>
+</$list>
+
+<<details label:"节点丸颜色" src:"节点丸颜色" status:close labelClass:"bg-light text-white">>

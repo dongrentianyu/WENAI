@@ -1,0 +1,18 @@
+created: 20230203184648034
+creator: 马不前
+modified: 20230228091326550
+modifier: 马不前
+tags: 太微官方文档
+title: whitespace是什么？
+tmap.id: 98e65687-3696-4d4c-8fab-a3185719f73f
+type: text/vnd.tiddlywiki
+
+官方文档的解释
+
+>\whitespace trim 或 \whitespace notrim 控制是否裁减文本的起始和结尾的空格（默认为 notrim）。当由 linebreak 生成的空格会影响格式化时，此设置将非常有用
+
+[[对应链接|https://bramchen.github.io/tw5-docs/zh-Hans/#Pragma]]
+
+简单来说就是这个可以防止空格或者换行的影响。我之前做[[quick-add-tags]]的按钮时，因为没有加这个，所以就会与其他按钮有间隔距离。后面加上了就正常了，和其他按钮正确摆放在一起。
+
+在编写文档时也经常看到这个放在宏定义的后面，目的就是防止下面代码的空格或者换行的影响。因为不空格或者不换行的话，代码阅读起来非常难受，效率非常低。

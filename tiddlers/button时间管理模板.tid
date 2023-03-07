@@ -1,0 +1,15 @@
+created: 20220918072645247
+creator: 马不前
+icon: 
+modified: 20230211164422064
+modifier: 马不前
+tags: 时间管理与出版信息的制作
+title: button时间管理模板
+tmap.id: 55f267d0-6c1d-4630-b29c-68b125d7d871
+type: text/vnd.tiddlywiki
+
+<$button class=<<tv-config-toolbar-class>>>
+<$action-sendmessage $message="tm-new-tiddler" text="{{||时间管理模板}}" />
+[img[时间统计图标]]
+
+</$button>

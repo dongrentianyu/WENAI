@@ -1,0 +1,30 @@
+created: 20220918140144677
+creator: 马不前
+icon: 
+modified: 20230131154321164
+modifier: 马不前
+tags: TableOfContents 转载
+title: 知识链-创建保存-插件列表-功能条目
+tmap.id: a2756feb-d44a-405f-8f21-965365be2e9f
+type: text/vnd.tiddlywiki
+
+TiddlyWiki新人小白必备信息（知识链、创建保存、插件列表）
+
+适用于对tiddlywiki感兴趣并决定使用tiddlywiki的小伙伴。
+
+可以通过已有的例子（比如tiddlywiki xp中的实现）仿写学习或者实现自己需要的功能
+
+!!! 强烈推荐阅读 <<linkgithub "提问的智慧" "https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/main/README-zh_CN.md">>
+
+
+<$macrocall
+  $name="tabs"
+  tabsList="[tag[知识链-创建保存-插件列表-功能条目]sort[order]]"
+  default=""
+  state="$:/state/tab5"
+  class="tc-vertical"
+/>
+
+
+
+

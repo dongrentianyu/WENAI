@@ -1,0 +1,30 @@
+code-body: yes
+created: 20221012093532673
+creator: wubai
+modified: 20230225154644021
+modifier: 马不前
+tags: 
+title: node-explorer-colorful
+tmap.id: b9027fc4-e76c-4bb8-a9fa-0c27326e5fc8
+type: text/vnd.tiddlywiki
+
+\import node-explorer
+\define subtiddler-pattern() $(currentTiddler)$
+\define type-class() badge p-1 badge-$(type)$
+
+<$list filter="[all[current]get[node-explorer]!match[hide]] [all[current]!has[node-explorer]] :and[!is[system]]" variable=null>
+<$list filter=<<mainFilter>> variable="currentRecord">
+	<$let type={{{ 
+		[all[current]links[]match<currentRecord>then[info text-white]]
+		[all[current]backlinks[]match<currentRecord>then[danger text-white]]
+		[all[current]tagging[]match<currentRecord>then[warning text-dark]]
+		[all[current]tags[]match<currentRecord>then[success text-white]]
+		[<currentRecord>prefix<subtiddler-pattern>then[primary text-white]]
+		:else[<currentRecord>search:text<currentTiddler>then[secondary text-white]else[dark text-white]] 
+		}}} >
+			<$link to=<<currentRecord>> class=<<type-class>> />
+	</$let>
+</$list>
+</$list>
+
+{{节点丸颜色||moban}}

@@ -1,0 +1,29 @@
+created: 20220726031832906
+creator: 马不前
+difficulty: 6.148683298050514
+due: 20220922162421882
+grade: 0
+history: [{"due":"20220922054716964","interval":0,"difficulty":5,"stability":2,"retrievability":1,"grade":-1,"lapses":0,"reps":1,"review":"20220920054716964"}]
+interval: 1
+lapses: 1
+modified: 20230124181625199
+modifier: 马不前
+reps: 1
+retrievability: 0.9486832980505138
+review: 20220921162421882
+stability: 1.4816364413634358
+tags: 太微使用笔记 快被拆除的
+title: 太微中阶用法指南
+tmap.id: 9218a4d2-5185-4539-8ef8-8cfb9a613b54
+type: text/vnd.tiddlywiki
+
+因为有了视频教程，也有插件介绍的教程，所以太微中阶用法指南就不会再写了。再写也是这些内容。经验什么的还会分享出来。有其他好用的插件也会做视频。视频毕竟比文字看的人要多一点。而且一般的插件都会有一个demo也不用特意去写文章。
+
+不过关于教育和学习方面的内容还是写文章容易表达。但那就与太微无关了。
+
+<div class="tc-table-of-contents">
+
+<<toc-selective-expandable '太微中阶用法指南'>>
+
+
+</div>

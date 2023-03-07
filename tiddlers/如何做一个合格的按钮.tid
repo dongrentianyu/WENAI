@@ -1,0 +1,63 @@
+created: 20230203185502038
+creator: 马不前
+modified: 20230207125206412
+modifier: 马不前
+tags: 自定制的太微
+title: 如何做一个合格的按钮
+tmap.id: 90937745-582a-4edc-a1d5-6325ba73bc3f
+type: text/vnd.tiddlywiki
+
+先看官方文档里写的。[[创建新的工具栏按钮|https://bramchen.github.io/tw5-docs/zh-Hans/#Creating%20new%20toolbar%20buttons]]
+
+---
+按钮一般就是两方面，一方面是功能的实现，另一方面就是样式。功能的实现看自己能力或者请教别人，而样式的修改则是可以掌握的，但很少有人出来说明的。
+
+首先看钓鱼插件这个按钮$:/plugins/oflg/fishing/fishingfloat。可以发现其中先用了\whitespace trim占一行。这个或许有用或许没用，但建议加上。
+
+整个按钮代码如下所示。
+
+```
+<$button
+    popup=<<qualify "$:/state/popup/fishingdeck">>
+    tooltip={{$:/language/fishing/fishingtip}}
+    aria-label={{$:/language/fishing/fishingtip}}
+    class=<<tv-config-toolbar-class>>
+    selectedClass="tc-selected"
+>
+    <$list filter="[<tv-config-toolbar-icons>match[yes]]">
+        {{$:/plugins/oflg/fishing/icon}}
+    </$list>
+    <$list filter="[<tv-config-toolbar-text>match[yes]]">
+        <span class="tc-btn-text">
+            {{$:/language/fishing/fishingtip}}
+        </span>
+    </$list>
+</$button>
+```
+
+除`popup=<<qualify "$:/state/popup/fishingdeck"`外，其他的基本上可以照抄。`{{$:/language/fishing/fishingtip}}`这一类的是因为插件里面有对应条目，一般我们不把自己的按钮做成插件的话，直接写文字就行。后面也是一样。然后我们就是替换图标和文本。再在下面加上实现的功能代码。
+
+其中有两个list筛选器，我也不清楚是什么意思。我猜想是因为当这个按钮没有放在页面上时，就显示后面的文本内容。不然就不显示。
+
+然后再查看这个条目的caption和description字段。同样写一下。基本上一个合格的按钮就成功了。
+
+图标尽量选用官方自带的，不然调整svg也是很麻烦的。当然对于会的人来说不麻烦，对于不会的人来说就很麻烦。好在官方的图标还是够用的。按钮基本上分三类，显示在编辑状态下的，显示在保存状态下的，显示在侧边栏的。三者对应不同的标签。
+
+这里有两个示例，[[示例1|摘录标签]]与[[示例2|添加前缀按钮]]，后者的[[详细说明|添加前缀按钮说明]]。 
+
+
+如果是自己选用svg，那就看一下$:/plugins/oflg/fishing/icon好了。关键就在头部。
+
+```
+<svg width="22pt" height="22pt" class="tc-image-home-button tc-image-button" viewBox="0 0 128 128" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+```
+其中`width="22pt" height="22pt" class="tc-image-home-button tc-image-button"`没有的，可以手动加上去。如果还不行，那就用官方图标好了。[[对应链接|https://bramchen.github.io/tw5-docs/zh-Hans/#Icon%20Gallery]]或者使用[[tiddlywiki图标库]]。后者更方便。
+
+---
+原稿
+
+如果要创建一个新的按钮，按钮的动作一般自己去搞，这里说一下样式。需要对svg图像做一个调整，然后在调用的时候，需要添加class样式。
+
+具体可以参考[[$:/plugins/oflg/fishing/fishingfloat]]
+
+xp教程里也有一些相关内容，可以参考。例如[[大图查看]]。

@@ -1,0 +1,77 @@
+created: 20230102135015910
+creator: 马不前
+modified: 20230105123520841
+modifier: 马不前
+tags: 
+title: 图书添加
+tmap.id: 74fa441f-a2af-4b48-b672-bd5a867962c7
+type: text/vnd.tiddlywiki
+
+|<<select-field-value "title"  "[!is[system]each[title]get[title]regexp{$:/state/NewTiddlerForm!!name_temp}]">>|<<list-searchx filter:"[!is[system]tag[Book]regexp{$:/state/NewTiddlerForm!!name_temp}]" >>|<|
+
+|''书名：''|<$edit-text class='tc-edit-texteditor'tiddler='$:/state/NewTiddlerForm' field='name_temp' placeholder='Tiddler Name'/>|<|
+|''author:''|<<select-field-value "author"  "[each[author]get[author]regexp{$:/state/NewTiddlerForm!!author}]">>|<$edit-text class='tc-edit-texteditor' tiddler='$:/state/NewTiddlerForm' field='author' default='' placeholder='author'/>|
+|''出版年份:''|<<select-field-value "出版年份" "[each[出版年份]get[出版年份]regexp{$:/state/NewTiddlerForm!!出版年份}]">>|<$edit-text type="date" class='tc-edit-texteditor' tiddler='$:/state/NewTiddlerForm' field='出版年份' default='' placeholder='出版年份'/>|
+|''出版社:''|<<select-field-value "出版社" "[each[出版社]get[出版社]regexp{$:/state/NewTiddlerForm!!出版社}]">>|<$edit-text class='tc-edit-texteditor' tiddler='$:/state/NewTiddlerForm' field='出版社' default='' placeholder='出版社'/>|
+|''出品方:''|<<select-field-value "出品方" "[each[出品方]get[出品方]regexp{$:/state/NewTiddlerForm!!出品方}]">>|<$edit-text class='tc-edit-texteditor' tiddler='$:/state/NewTiddlerForm' field='出品方' default='' placeholder='出品方'/>|
+|''丛书:''|<<select-field-value "丛书" "[each[丛书]get[丛书]regexp{$:/state/NewTiddlerForm!!丛书}]">>|<$edit-text class='tc-edit-texteditor' tiddler='$:/state/NewTiddlerForm' field='丛书' default='' placeholder='丛书'/>|
+|''译者:''|<<select-field-value "译者" "[each[译者]get[译者]regexp{$:/state/NewTiddlerForm!!译者}]">>|<$edit-text class='tc-edit-texteditor' tiddler='$:/state/NewTiddlerForm' field='译者' default='' placeholder='译者'/>|
+|''国家:''|<<select-field-value "国家" "[each[国家]get[国家]regexp{$:/state/NewTiddlerForm!!国家}]">>|<$edit-text class='tc-edit-texteditor' tiddler='$:/state/NewTiddlerForm' field='国家' default='' placeholder='国家'/>|
+|''时代:''|<<select-field-value "时代" "[each[时代]get[时代]regexp{$:/state/NewTiddlerForm!!时代}]">>|<$edit-text class='tc-edit-texteditor' tiddler='$:/state/NewTiddlerForm' field='时代' default='' placeholder='时代'/>|
+|''所看书目类型:''|<<select-field-value "所看书目类型" "[each[所看书目类型]get[所看书目类型]regexp{$:/state/NewTiddlerForm!!所看书目类型}]">>|<$edit-text class='tc-edit-texteditor' tiddler='$:/state/NewTiddlerForm' field='所看书目类型' default='' placeholder='所看书目类型'/>|
+|''状态:''|<<select-field-value "状态" "[each[状态]get[状态]regexp{$:/state/NewTiddlerForm!!状态}]">>|<$edit-text class='tc-edit-texteditor' tiddler='$:/state/NewTiddlerForm' field='状态' default='' placeholder='状态'/>|
+|''装帧:''|<<select-field-value "装帧" "[each[装帧]get[装帧]regexp{$:/state/NewTiddlerForm!!装帧}]">>|<$edit-text class='tc-edit-texteditor' tiddler='$:/state/NewTiddlerForm' field='装帧' default='' placeholder='装帧'/>|
+|''书店:''|<<select-field-value "书店" "[each[书店]get[书店]regexp{$:/state/NewTiddlerForm!!书店}]">>|<$edit-text class='tc-edit-texteditor' tiddler='$:/state/NewTiddlerForm' field='书店' default='' placeholder='书店'/>|
+|''金额:''|<<select-field-value "金额" "[each[金额]get[金额]regexp{$:/state/NewTiddlerForm!!金额}]">>|<$edit-text class='tc-edit-texteditor' tiddler='$:/state/NewTiddlerForm' field='金额' default='' placeholder='金额'/>|
+|''购书时间:''|<<select-field-value "购书时间" "[each[购书时间]get[购书时间]]">>|<$edit-text type="date"   class='tc-edit-texteditor' tiddler='$:/state/NewTiddlerForm' field='购书时间' default='' placeholder='购书时间'/>|
+|''完毕时间:''|<<select-field-value "完毕时间" "[each[完毕时间]get[完毕时间]]">>|<$edit-text type="date"   class='tc-edit-texteditor' tiddler='$:/state/NewTiddlerForm' field='完毕时间' default='' placeholder='完毕时间'/>|
+|''总页数:''|<$edit-text class='tc-edit-texteditor' tiddler='$:/state/NewTiddlerForm' field='总页数' default='' placeholder='总页数'/>|<|
+|''字数:''|<$edit-text class='tc-edit-texteditor' tiddler='$:/state/NewTiddlerForm' field='字数' default='' placeholder='字数'/>|<|
+|''ISBN:''|<$edit-text class='tc-edit-texteditor' tiddler='$:/state/NewTiddlerForm' field='ISBN' default='' placeholder='ISBN'/>|<|
+|''正文内容：''|<$edit-text class='tc-edit-texteditor'tiddler='$:/state/NewTiddlerForm' field='text' placeholder='Tiddler Text' default='><<fields >>' />|<|
+
+<$button>
+ <$action-createtiddler $basetitle= {{$:/state/NewTiddlerForm!!name_temp}} $overwrite="yes" $template="Input" text={{Input!!text}} 
+ tags="Book"
+ 丛书={{$:/state/NewTiddlerForm!!丛书}} 
+ 购书时间={{$:/state/NewTiddlerForm!!购书时间}} 
+ 国家={{$:/state/NewTiddlerForm!!国家}}
+ 装帧={{$:/state/NewTiddlerForm!!装帧}} 
+ 时代={{$:/state/NewTiddlerForm!!时代}}
+ 译者={{$:/state/NewTiddlerForm!!译者}}
+ 字数={{$:/state/NewTiddlerForm!!字数}} 
+ 金额={{$:/state/NewTiddlerForm!!金额}} 
+ author={{$:/state/NewTiddlerForm!!author}} 
+ 出版年份={{$:/state/NewTiddlerForm!!出版年份}} 
+ 出版社={{$:/state/NewTiddlerForm!!出版社}}
+ 所看书目类型={{$:/state/NewTiddlerForm!!所看书目类型}}
+ 完毕时间={{$:/state/NewTiddlerForm!!完毕时间}}
+ 状态={{$:/state/NewTiddlerForm!!状态}}
+ ISBN={{$:/state/NewTiddlerForm!!ISBN}}
+ 总页数={{$:/state/NewTiddlerForm!!总页数}}
+ 出品方={{$:/state/NewTiddlerForm!!出品方}}
+ > 
+</$action-createtiddler>
+''新建图书''
+</$button><$button>清除格式
+<$action-setfield $tiddler='$:/state/NewTiddlerForm' 
+name_temp=''
+text=''
+author=''
+tags=''
+丛书=''
+购书时间=''
+装帧=''
+时代=''
+译者=''
+字数=''
+金额=''
+出版年份=''
+所看书目类型=''
+完毕时间=''
+状态=''
+ISBN=''
+总页数=''
+出品方=''
+出版社=''
+国家=''/>

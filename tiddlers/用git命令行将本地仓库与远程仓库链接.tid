@@ -1,0 +1,52 @@
+created: 20230112045213911
+creator: 马不前
+modified: 20230112123251617
+modifier: 马不前
+tags: Modern.TiddlyDev
+title: 用git命令行将本地仓库与远程仓库链接
+tmap.id: a6f0281c-e95b-45f2-92b5-f8bd95f13ac7
+type: text/vnd.tiddlywiki
+
+[[关于git相关的提示|git与github及其desktop]]
+
+远程仓库有很多种，常见的有github和gitee。后者是国内的，可能更稳定一些，但我没用过。
+
+''声明：这只是简单操作流程，我不会去解释具体命令的含义。（因为我也不是特别清楚，不敢误人子弟）写下来的目的是为了帮助成功安装，让本地仓库和远程仓库保持一致。''
+
+首先，用命令行在本地新建一个仓库。
+
+新建成功后，打开新建文件夹的终端，用vscode编辑器打开也是一样的效果。
+
+写下“git branch”可以查看当前分支为master。
+
+写下“git add -A”可以把当前文件夹的内容全部提交过去。
+
+写下“git commit -m "第一次提交" ”意味着把添加的内容第一次提交过去。
+
+写下“git push“发现需要远程仓库才能推送。
+
+在github上创建一个仓库，除了title、Description和public或者private外，其他的都不要勾选。因为我们需要一个纯空的仓库。勾选了下面的readme或者证书什么的，就不是纯空的仓库了，会自动添加一个仓库进去，就会报错。
+
+创建好了后，把上面的ssh切换成https，默认是ssh，但ssh很复杂需要密钥一类的。感兴趣的可自动探索。
+
+找到中间含有“…or push an existing repository from the command line”字样的，下面有三个命令。分别复制过来。
+
+先复制类似命令“git remote add origin https://github.com/dongrentianyu/gittest.git”，（因为这是我测试使用的，回头会删除），找到这个命令，复制在终端里。
+
+再复制命令“git branch -M main”，粘贴到终端里。
+
+再复制命令“git push -u origin main”，同样粘贴到终端里。
+
+然后去github上刷新页面，就会看到这个仓库里有了相应的文件。不过npm安装包的文件不会放过去。
+
+同样需要去settings里找到actions，找到general，划到最下面Workflow permissions，把下面的选项改为可读写状态。保存后，去actions里找到“第一次提交”，然后看旁边有一个按钮，可以“re-run all jobs”，重新再部署一下。
+
+稍等一会儿，没有报错就可以了。发布网址的方式就是去settings里找到pages，下面选择gh-pages，旁边先root，保存即可。稍等几分钟或者十几分钟就可以看到网址了。不过这些会把内容全部公开。需注意。
+
+接下来，可以选择github desktop来控制版本管理。也可以继续用git命令行操作。不懂编程的还是建议用github desktop，更简单。
+
+下面是两个链接，可用来简单了解git命令行。
+
+[[Git 常用基本命令使用详细大全|https://blog.csdn.net/qtiao/article/details/97783243#:~:text=Git]]
+
+[[常用 Git 命令总结|https://zhuanlan.zhihu.com/p/384819351]]

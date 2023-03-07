@@ -1,0 +1,30 @@
+created: 20220911153845350
+modified: 20230305002030874
+modifier: 马不前
+tags: 太微答疑（已解决的）
+title: 孤立条目
+tmap.id: d48f7c4c-f99b-459c-a791-e4319e8fef2d
+type: text/vnd.tiddlywiki
+
+<div class="left-column-border">
+
+* 如何批量处理孤立条目？或者显示出来？
+
+*怎样显示没有标签的条目？
+
+</div>
+
+<div class="right-column-border">
+
+```
+[!is[system]sort[title]untagged[]]
+```
+这个筛选器可以在高级检索里检索出来
+
+```
+[all[orphans]sort[title]]
+```
+这个可能在太记版本里不适用,在浏览器里估计可以,自行尝试
+
+
+</div>

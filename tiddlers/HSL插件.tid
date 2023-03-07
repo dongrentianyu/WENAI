@@ -1,0 +1,20 @@
+created: 20230113105031028
+creator: 马不前
+linkcode: <<linkcode "https://github.com/kookma/TW-hsl" >>
+linkdemo: <<linkdemo "https://kookma.github.io/TW-Hsl/" >>
+modified: 20230123174801938
+modifier: 马不前
+tags: 库克马插件 插件介绍
+title: HSL插件
+tmap.id: 3b46cf54-0022-4c4e-b4d9-975e3a4822a0
+type: text/vnd.tiddlywiki
+
+<<<
+{{!!linkdemo}}{{!!linkcode}}
+<<<
+
+这个插件本意是为了高亮代码服务的。但我发现也可以用来嵌入一些片段。比如我有一篇完整的文章。我需要在另一个条目里嵌入其中的一段文字，但我不想把文章拆分成多个小的条目。（这种情况多见于古文和古诗词，因为除了特别长的长诗外，一般是不好分章节的。）那么就可以用高亮来实现这种效果了。
+
+高亮是通过行号来实现的。而显示行号需要code mirror插件来实现。
+
+但显示的并不会在下面节点丸里体现。因为本质上是通过code block语法来调用的。所以如果在书写时不如放一个链接条目，这样更方便。

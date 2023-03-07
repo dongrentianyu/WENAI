@@ -1,0 +1,16 @@
+created: 20220827110235999
+creator: 马不前
+modified: 20221202023756768
+modifier: 马不前
+tags: 笔记<->学习
+title: 阅读、笔记、复习与记忆
+tmap.id: 166e8a4b-8f4e-4c22-bb09-5baa49842785
+type: text/vnd.tiddlywiki
+
+<$macrocall
+  $name="tabs"
+  tabsList="[tag[阅读、笔记、复习与记忆]]"
+  default=""
+  state="$:/state/tab5"
+  class="tc-vertical"
+/>

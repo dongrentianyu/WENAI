@@ -1,0 +1,22 @@
+created: 20230105100114083
+creator: 马不前
+modified: 20230105121711405
+modifier: 马不前
+tags: 
+title: 简单快速表单试用
+tmap.id: d78e5af2-12bd-4b9e-97df-814e84e2a377
+type: text/vnd.tiddlywiki
+
+''标题：''<$edit-text class='tc-edit-texteditor' tiddler='$:/state/NewTiddlerForm' field='name_temp' placeholder='Tiddler Name'/>
+
+''正文内容：''<$edit-text class='tc-edit-texteditor' tiddler='$:/state/NewTiddlerForm' field='text' placeholder='Tiddler Text'/>
+
+''author：''<<select-field-value "author" "[each[author]get[author]]">>
+
+<$button>
+ <$action-createtiddler $basetitle={{$:/state/NewTiddlerForm!!name_temp}} $overwrite="yes" $template="Input" text={{$:/state/NewTiddlerForm!!text}} author={{$:/state/NewTiddlerForm!!author}}> 
+</$action-createtiddler>
+新建条目
+</$button>
+<$button>清除格式
+<$action-setfield $tiddler='$:/state/NewTiddlerForm' name_temp='' text=''author='' author=''/>

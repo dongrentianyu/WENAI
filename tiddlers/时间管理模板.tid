@@ -1,0 +1,19 @@
+caption: 
+created: 20220918055356009
+modified: 20220924104758834
+readwritemode: writemode
+tags: 时间管理与出版信息的制作
+title: 时间管理模板
+tmap.id: edb855ce-dfa8-4738-8e5d-5b233db1f8c1
+type: text/vnd.tiddlywiki
+时间类别: 
+更新记录: 
+花费时间: 
+
+<<TableReadWriteToggle>>
+
+|!花费时间|^<<TableCellMultiLine "花费时间">>||!时间类别|^<<TableCellMultiLine "时间类别">>|
+|!caption|^<<TableCellMultiLine "caption">>||!更新记录|^<<TableCellMultiLine "更新记录">>|
+
+
+

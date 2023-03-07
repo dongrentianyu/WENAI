@@ -1,0 +1,22 @@
+/* Extracted from bootstrap 4.3.1 */
+.card-columns .card {
+  margin-bottom: 0rem;
+  background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+}
+
+@media (min-width: 576px) {
+  .card-columns {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 4;
+    -webkit-column-gap: 0.2rem;
+    -moz-column-gap: 0.2rem;
+    column-gap: 0.2rem;
+    orphans: 1;
+    widows: 1;
+  }
+  .card-columns .card {
+    display: inline-block;
+    width: 100%;
+  }
+}

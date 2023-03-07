@@ -1,0 +1,27 @@
+created: 20230305042150237
+modified: 20230305042741386
+tags: 
+title: 如何制作自己的视图并切换视图
+tmap.id: a23c293c-29bd-44f2-bc68-417687eacd66
+type: text/vnd.tiddlywiki
+
+给一个条目加上`$:/tags/Layout`标签，然后再添加name和description字段，里面只要有内容就可以在切换视图的按钮里看到选项。或者ctrl+shift+l的快捷键调出切换页面。
+
+
+```
+\whitespace trim
+<$button  class=<<tv-config-toolbar-class>>>
+<$action-setfield $tiddler="$:/layout" text=""/>
+home
+</$button>
+```
+
+然后把上面的代码复制进去，就会有一个home按钮，可以回退到默认的页面。当然用上面的快捷键重新调出切换页面切换也可以。
+
+
+```
+<$transclude tiddler="" />
+```
+使用上面的transclude可以动态地导入条目内容。比直接花括号嵌入要好。
+
+这样就可以搞一个多视图切换，然后里面放各种图表，展示起来更方便。或者是标签云一类的。

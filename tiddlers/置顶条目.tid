@@ -1,0 +1,35 @@
+created: 20220912001927373
+modified: 20230305002030877
+modifier: 马不前
+tags: 太微答疑（已解决的）
+title: 置顶条目
+tmap.id: 2740f010-683a-45ad-bc71-1cfc50ccee7d
+type: text/vnd.tiddlywiki
+
+<div class="left-column-border">
+
+*能不能把一些常见的页边栏选项放到编辑器这边来?这样就不用麻烦点旁边的了。
+
+</div>
+
+<div class="right-column-border">
+
+搜索
+
+```
+$:/core/ui/SideBarSegments/page-controls
+```
+
+这个系统条目,直接加个
+
+```
+$:/tags/AboveStory
+```
+
+标签就行了
+
+css居中显示可以到简易教程里面拿文件,可以按自己的需求修改
+
+唯一的不足,可能是会在编辑的时候挡住编辑区域,这个还是看自己调整一下,觉得麻烦也可以关掉
+
+</div>

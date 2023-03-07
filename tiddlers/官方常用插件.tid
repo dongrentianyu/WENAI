@@ -1,0 +1,33 @@
+created: 20221213121054841
+creator: 马不前
+modified: 20221213122520021
+modifier: 马不前
+order: 1
+tags: 官方插件
+title: 官方常用插件
+tmap.id: 4ef9da98-5043-438d-9263-6ff6f0c217a5
+type: text/vnd.tiddlywiki
+
+! 常用插件
+;tiddlywiki/highlight-legacy
+:为传统浏览器提供Highlight.js语法高亮功能。
+;tiddlywiki/menubar
+:该插件提供了一个具有多个功能的菜单栏。
+;tiddlywiki/evernote
+:Evernote迁移工具。这个插件包含协助从Evernote ENEX文件迁移内容的工具。
+;tiddlywiki/dynannotate
+:Dynannotate插件允许创建和显示文本内容的注释。这是钓鱼插件的配套插件，推荐安装。
+;tiddlywiki/bibtex
+:BibTeX导入器，BibTeX插件提供了一个反序列化器，可以将.bib文件中的书目条目转换为单独的tiddlers。
+;tiddlywiki/qrcode
+:二维码插件提供了一个宏，使任何文本都可以被呈现为二维码。智能手机可以使用或内置QR码阅读器，使其成为在设备间传输信息的便捷手段。
+;tiddlywiki/codemirror
+:CodeMirror编辑器及附加组件AddOns，这个插件提供了一个基于CodeMirror的增强型文本编辑器组件。基本配置被设计成尽可能的轻量级，大小只有235kb左右。其他功能可以通过插件库中的CodeMirror AddOns来安装。
+;tiddlywiki/highlight
+:这个插件使用Ivan Sagalaev的highlight.js的11.4.0版本提供代码块的语法高亮。这个插件不能在不完全支持JavaScript ES6（2015）的浏览器上运行。
+;tiddlywiki/katex
+:用于数学排版的KaTeX库。这是一个用于数学和化学排版的TiddlyWiki插件，基于Khan Academy的KaTeX（v0.16）和通过Katex扩展的mhchem。它是完全独立的，不需要互联网连接就能工作。它可以在浏览器和Node.js下工作。
+;tiddlywiki/markdown
+:这是一个用于解析Markdown文本的TiddlyWiki插件，使用Remarkable库。如果安装了KaTeX TiddlyWiki插件，就可以使用 remarkable-katex Remarkable插件来启用KaTeX支持。它是完全独立的，不需要互联网连接就能工作。它在浏览器和Node.js下都能工作。
+;tiddlywiki/external-attachments
+:TiddlyDesktop的外部附件，这个插件提供了对作为外部附件导入tiddlers的支持。这意味着不是将二进制文件作为独立的tiddlers导入，而是将其作为 "瘦小的 "tiddlers导入，通过_canonical_uri字段引用原始文件。这减少了wiki的大小，从而提高了性能。然而，这确实意味着维基不再是完全独立的。

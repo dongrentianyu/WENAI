@@ -1,0 +1,16 @@
+created: 20220814020154533
+creator: 马不前
+modified: 20220922043913319
+modifier: 马不前
+tags: 打字学习
+title: 五笔输入法学习
+tmap.id: 8e79e1f9-f07e-4fbc-842e-5f71ce5c3a9b
+type: text/vnd.tiddlywiki
+
+<$macrocall
+  $name="tabs"
+  tabsList="[tag[五笔输入法学习]]"
+  default="{{!!title}}"
+  state="$:/state/tab5"
+  class="tc-vertical"
+/>

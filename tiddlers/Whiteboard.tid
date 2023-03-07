@@ -1,0 +1,18 @@
+created: 20230127055806007
+creator: 马不前
+linkcode: <<linkcode "https://github.com/tiddly-gittly/tiddlywiki-whiteboard/">>
+linkdemo: <<linkdemo "https://tiddly-gittly.github.io/tiddlywiki-whiteboard/#Index">>
+modified: 20230127061222765
+modifier: 马不前
+tags: 插件介绍 林一二插件库
+title: Whiteboard
+tmap.id: 93b6c9ed-c697-4e54-adaf-d65028d222d9
+type: text/vnd.tiddlywiki
+
+<<<
+{{!!linkdemo}}{{!!linkcode}}
+<<<
+
+白板插件，由林一二开发。基本的功能都有，但白板这个东西需要有一个比较大的显示器。像普通的笔记本电脑，处理起来很麻烦。空间太小是无法很好地使用白板一类的插件或者软件的。
+
+虽然我在[[关于白板笔记]]里认为白板笔记并不适合做笔记。但如果显示器够大，其实用来展示是很方便的。因为白板笔记解决了太微一个痛点问题。太微只有最简单的正文页面，而没有更丰富的嵌套。这和notion或者一些白板软件相比就差了点。所以后续有机会，有了大的显示器后，我还会再尝试一下这个插件。因为用好的话，可能会比tiddlymap更强大。

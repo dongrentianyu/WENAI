@@ -1,0 +1,24 @@
+created: 20220821045909565
+creator: 马不前
+modified: 20230225111937532
+modifier: 马不前
+tags: asd
+title: homepage footer
+tmap.id: 7d2f6a72-3f08-4a66-b56f-8e6461d26ba9
+type: text/vnd.tiddlywiki
+
+<hr>
+<div style="font-weight: regular; border-radius: 4px;background:;font-size:60%; padding: 2px 5px 2px;user-select: none;text-align:center;">
+
+<!--
+<i style="color: red;" class="fa-beat-fade fa-solid fa-microchip"></i>
+<i style="color: cyan" class="fab fa-shake fa-git"></i>
+-->
+<i style="color: #07ff07" class="fa-spin fas fa-sync"></i>
+<$list filter="[!is[system]!has[draft.of]!sort[modified]limit[1]]" tiddler=<<currentTiddler>>>
+最后更新于
+<$view tiddler=<<currentTiddler>> field=modified format=date template="YYYY年mmmDD日 0hh:0mm:0ss" />
+拥有
+<$count filter="[!is[system]sort[title]]"/> 条目!
+</$list> &nbsp; 
+</div>

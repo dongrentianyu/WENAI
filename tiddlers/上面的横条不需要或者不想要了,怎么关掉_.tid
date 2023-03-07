@@ -1,0 +1,23 @@
+created: 20220911153640379
+modified: 20230305002030875
+modifier: 马不前
+tags: 太微答疑（已解决的）
+title: 上面的横条不需要或者不想要了,怎么关掉?
+tmap.id: b53f8061-676b-4de0-be6a-d0af8f41df1a
+type: text/vnd.tiddlywiki
+
+<div class="left-column-border">
+
+* 上面的横条不需要或者不想要了,怎么关掉?
+
+</div>
+
+<div class="right-column-border">
+
+可以找到下面这个插件,然后关掉禁用就可以了,插件是类似vscode的风格
+
+```
+:/plugins/linonetwo/opened-tiddlers-bar
+```
+
+</div>

@@ -1,0 +1,13 @@
+created: 20220905030007824
+modified: 20220922043913236
+tags: 五笔输入法学习
+title: 基本键位
+tmap.id: 984b2fd5-5c9f-4104-8fd2-0051201368c7
+type: text/vnd.tiddlywiki
+
+<$macrocall
+  $name="tabs"
+  tabsList="[tag[基本键位]]"
+  default=""
+  state="$:/state/tab5"
+ />

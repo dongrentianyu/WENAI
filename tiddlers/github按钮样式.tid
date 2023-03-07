@@ -1,0 +1,19 @@
+created: 20230105070133733
+creator: 马不前
+modified: 20230105082809815
+modifier: 马不前
+tags: 链接按钮宏 $:/tags/Macro
+title: github按钮样式
+tmap.id: dfc3f260-1e5e-4bfe-956e-cdf5a918dc4d
+type: text/vnd.tiddlywiki
+
+\define linkgithub(text,link) 
+<a href=<<__link__>> target="_blank" class="tc-btn-big-green" 
+style="background-color: gray;
+	border: 1px solid gray; /* 灰色边框 */
+  color: white; /* 白色文本 */
+  padding: 4px 10px; /* 内边距离 */
+  cursor: pointer; /* 指针/手形图标 */
+	font-size: 12px;" 
+	rel="noopener noreferrer">{{$:/core/images/github}}  ''<$text text=<<__text__>>/>''</a>
+\end

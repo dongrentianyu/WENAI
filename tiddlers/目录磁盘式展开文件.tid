@@ -1,0 +1,146 @@
+created: 20221130180036210
+creator: 马不前
+modified: 20221212160834753
+modifier: wubai
+tags: 
+title: 目录磁盘式展开文件
+tmap.id: b54b3c99-11f8-426b-b511-ab9476baca40
+type: text/vnd.tiddlywiki
+
+`{
+  "tooltip": {
+    "trigger": "item"
+  },
+  "series": [
+    {
+      "type": "treemap",
+      "visibleMin": 300,
+      "name": "目录磁盘式展开",
+      "leafDepth": 1,
+      "data": [
+`
+<$list filter="[!is[system]tag[TableOfContents]sort[title]]" variable="pluginName" counter="counter1">
+`        {
+          "name": "`<$list filter="[<pluginName>has[title]]"><$text text={{{ [<pluginName>get[title]] }}}/></$list>`",
+          "value": `<$text text={{{ [<pluginName>get[title]length[]else[0]] }}}/>`,
+          "children": [
+`
+<$list filter="[tag<pluginName>!is[system]]" variable="pluginShadow" counter="counter2">
+`          {
+            "name": "`<$text text={{{ [<pluginShadow>removeprefix<pluginName>removeprefix[/]else<pluginShadow>] }}}/>`",
+            "value": `<$text text={{{ [<pluginShadow>get[title]length[]else[0]] }}}/>`,
+            "children": [
+`
+<$list filter="[tag<pluginShadow>!is[system]]" variable="plugina" counter="counter3">
+`        {
+				     	"name": "`<$text text={{{ [<plugina>get[title]] }}}/>`",
+				     	"value": `<$text text={{{ [<plugina>get[title]length[]else[0]] }}}/>`,
+							"children": [
+							`<$list filter="[tag<plugina>!is[system]]" variable="pluginb" counter="counter4">`
+							{
+							"name": "`<$text text={{{ [<pluginb>get[title]] }}}/>`",
+							"value": `<$text text={{{ [<pluginb>get[title]length[]else[0]] }}}/>`,
+							"children": [
+							`<$list filter="[tag<pluginb>!is[system]]" variable="pluginc" counter="counter5">`
+							{
+							"name": "`<$text text={{{ [<pluginc>get[title]] }}}/>`",
+							"value": `<$text text={{{ [<pluginc>get[title]length[]else[0]] }}}/>`,
+							"children": [
+							`<$list filter="[tag<pluginc>!is[system]]" variable="plugind" counter="counter6">`
+							{
+							"name": "`<$text text={{{ [<plugind>get[title]] }}}/>`",
+							"value": `<$text text={{{ [<plugind>get[title]length[]else[0]] }}}/>`,
+							"children": [
+							`<$list filter="[tag<plugind>!is[system]]" variable="plugine" counter="counter7">`
+							{
+							"name": "`<$text text={{{ [<plugine>get[title]] }}}/>`",
+							"value": `<$text text={{{ [<plugine>get[title]length[]else[0]] }}}/>`,
+							"children": [
+							`<$list filter="[tag<plugine>!is[system]]" variable="pluginf" counter="counter8">`
+							{
+							"name": "`<$text text={{{ [<pluginf>get[title]] }}}/>`",
+							"value": `<$text text={{{ [<pluginf>get[title]length[]else[0]] }}}/>`,
+							"children": [
+							`<$list filter="[tag<pluginf>!is[system]]" variable="pluging" counter="counter9">`
+							{
+							"name": "`<$text text={{{ [<pluging>get[title]] }}}/>`",
+							"value": `<$text text={{{ [<pluging>get[title]length[]else[0]] }}}/>`,
+							"children": [
+								`<$list filter="[tag<pluging>!is[system]]" variable="pluginh" counter="counter10">`
+								{
+								"name": "`<$text text={{{ [<pluginh>get[title]] }}}/>`",
+							"value": `<$text text={{{ [<pluginh>get[title]length[]else[0]] }}}/>`,
+							"children": [
+							`<$list filter="[tag<pluginh>!is[system]]" variable="plugini" counter="counter11">`
+							{
+							"name": "`<$text text={{{ [<plugini>get[title]] }}}/>`",
+							"value": `<$text text={{{ [<plugini>get[title]length[]else[0]] }}}/>`
+							}
+							`<$list filter="[<counter11-last>match[no]]">`,`</$list>`
+							`</$list>`
+							]
+								}
+								`<$list filter="[<counter10-last>match[no]]">`,`</$list>`
+							`</$list>`
+							]
+							}
+							`<$list filter="[<counter9-last>match[no]]">`,`</$list>`
+							`</$list>`
+							]
+							}
+							`<$list filter="[<counter8-last>match[no]]">`,`</$list>`
+							`</$list>`
+							]
+							}
+							`<$list filter="[<counter7-last>match[no]]">`,`</$list>`
+							`</$list>`
+							]
+							}
+							`<$list filter="[<counter6-last>match[no]]">`,`</$list>`
+							`</$list>`
+							]
+							}
+							`<$list filter="[<counter5-last>match[no]]">`,`</$list>`
+							`</$list>`
+							]
+							}
+								`<$list filter="[<counter4-last>match[no]]">`,`</$list>`
+								`</$list>`
+							]
+					}	`<$list filter="[<counter3-last>match[no]]">`,`</$list>`
+`
+</$list>
+`  	]				
+					}`<$list filter="[<counter2-last>match[no]]">`,`</$list>`
+`
+</$list>
+`          ]
+        }`<$list filter="[<counter1-last>match[no]]">`,`</$list>`
+`
+</$list>
+`
+      ],
+      "levels": [
+        {
+          "itemStyle": {
+            "borderColor": "#555",
+            "borderWidth": 4,
+            "gapWidth": 4
+          }
+        },
+        {
+          "colorSaturation": [0.3, 0.6],
+          "itemStyle": {
+            "borderColorSaturation": 0.7,
+            "gapWidth": 2,
+            "borderWidth": 2
+          }
+        }
+      ],
+      "upperLabel": {
+        "show": true,
+        "height": 30
+      }
+    }
+  ]
+}`

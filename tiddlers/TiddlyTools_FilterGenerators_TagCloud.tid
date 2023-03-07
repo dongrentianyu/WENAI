@@ -1,0 +1,101 @@
+caption: TagCloud
+created: 20191128174135234
+modified: 20221202032846144
+modifier: 马不前
+tags: TiddlyTools $:/tags/AdvancedSearch xp里的插件
+title: TiddlyTools/FilterGenerators/TagCloud
+tmap.id: 8884cfcf-a0ee-4b98-81d9-39b5e4e05f51
+type: text/vnd.tiddlywiki
+
+\define config()  $:/config/TiddlyTools/TagCloud
+\define options() $:/state/popup/tagcloud
+\define default_min()   0.75
+\define default_step()  0.25
+\define default_max()   4.00
+\define default_group() 5
+
+\define tag-pill-inner(tag,icon,colour,fallbackTarget,colourA,colourB,element-tag,element-attributes,actions)
+<!-- copied from $:/core/macros/tag - added font-size, margin-bottom and count display in pill -->
+<$vars foregroundColor=<<contrastcolour target:"""$colour$""" fallbackTarget:"""$fallbackTarget$""" colourA:"""$colourA$""" colourB:"""$colourB$""">> backgroundColor="""$colour$""">
+<div style="display:inline-block;font-size:$(size)$em;line-height:1em;margin-bottom:2px;">
+<$element-tag$ $element-attributes$ class="tc-tag-label tc-btn-invisible" style=<<tag-pill-styles>>>
+$actions$<$transclude tiddler="""$icon$"""/> <$view tiddler=<<__tag__>> field="title" format="text" /> (<<count>>)
+</$element-tag$>
+</div>
+</$vars>
+\end
+
+\define tagcloud_select()
+<$set name="taglist" filter="[tags[]!is[system]sort[title]]">
+<div style="display:inline-block;float:left;margin-right:1em;margin-bottom:1em;">
+Select tags:
+<$button class="tc-btn-invisible">
+   <span style={{{ [<config>get[taglist]else[font-weight:bold;]] }}}>none</span>
+   <$action-setfield $tiddler=<<config>> taglist="" />
+</$button> |
+<$button class="tc-btn-invisible">
+   <span style={{{ [<config>get[taglist]match<taglist>then[font-weight:bold;]] }}}>all</span>
+   <$action-setfield $tiddler=<<config>> taglist=<<taglist>> />
+</$button>
+<<tagcloud_options>>
+<div style="clear:both;">
+<$select tiddler=<<config>> field="taglist" size=5 multiple>
+   <$list filter="[all[tiddlers+shadows]tags[]sort[]]"><option><<currentTiddler>></option></$list>
+</$select>
+\end
+
+\define tagcloud_options()
+<$let popid={{{ [<options>addsuffix<qualify>] }}}>
+<$button class="tc-btn-invisible" style="float:right;" popup=<<popid>> tooltip="Set display options">
+   {{$:/core/images/options-button}}
+</$button>
+<$reveal type="popup" state=<<popid>> position="belowleft"
+   class="tc-drop-down tt-drop-down tc-popup-keep" style="min-width:auto;padding:0.5em;">
+   <span style="float:right;margin-left:1em;">
+      <$button class="tc-btn-invisible" style="display:inline;padding:0;width:auto;" tooltip="reset to defaults">{{$:/core/images/refresh-button}}
+         <$action-deletefield $tiddler=<<config>> min step max group/>
+      </$button>
+      <$button class="tc-btn-invisible" style="display:inline;padding:0;width:auto;" tooltip="close">{{$:/core/images/close-button}}
+         <$action-deletetiddler $tiddler=<<popid>>/>
+      </$button>
+   </span>
+   ~TagCloud options
+   <div class="tt-shadowbox inset" style="clear:both;text-align:right;">
+        min size: <$edit-text tiddler=<<config>> field="min"   class="option" default=<<default_min>>   placeholder=<<default_min>>   /><br>
+       step size: <$edit-text tiddler=<<config>> field="step"  class="option" default=<<default_step>>  placeholder=<<default_step>>  /><br>
+        max size: <$edit-text tiddler=<<config>> field="max"   class="option" default=<<default_max>>   placeholder=<<default_max>>   /><br>
+      group size: <$edit-text tiddler=<<config>> field="group" class="option" default=<<default_group>> placeholder=<<default_group>> /><br>
+   </div>
+</$reveal>
+\end
+
+\define tagcloud_summary()
+<br>
+There are          ''<$text text={{{ [enlist<taglist>count[]]" }}}/> selected tags''<br>
+Tagging a total of ''<$text text={{{ [enlist<taglist>tagging[]count[]]" }}}/> tiddlers''<br>
+Sort results by:
+<$radio tiddler=<<config>> field="sortorder" value="count"> count </$radio>
+<$radio tiddler=<<config>> field="sortorder" value="name">  name  </$radio>
+\end
+
+\define tagcloud_show()
+<p style="clear:both;">
+<$let min={{{ [<config>get[min]]   ~[<default_min>]   }}}
+     step={{{ [<config>get[step]]  ~[<default_step>]  }}}
+      max={{{ [<config>get[max]]   ~[<default_max>]   }}}
+    group={{{ [<config>get[group]] ~[<default_group>] }}}>
+<$set name="sub" filter="[<config>get[sortorder]] ~[[count]] +[match[count]]" value="[tagging[]count[]]" emptyValue="[get[title]]">
+<$list filter="[enlist<taglist>!sortsub:integer<sub>]">
+   <$let count={{{ [<currentTiddler>tagging[]count[]] }}} size={{{ [<count>divide<group>trunc[]multiply<step>add<min>min<max>] }}}><<tag>></$let>
+</$list>
+\end
+
+<style>
+   .tt-tagcloud input        { width:auto !important; }
+   .tt-tagcloud input.option { width:3em  !important; text-align:right; }
+</style>
+<div class="tt-tagcloud">
+<<tagcloud_select>>
+<$set name=taglist filter="[<config>get[taglist]enlist-input[]]">
+<<tagcloud_summary>>
+<<tagcloud_show>>

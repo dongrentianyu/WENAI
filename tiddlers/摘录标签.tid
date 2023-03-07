@@ -1,0 +1,26 @@
+caption: {{$:/core/images/erase}} 添加摘录标签
+created: 20230203190539325
+creator: 马不前
+description: 添加摘录标签
+modified: 20230203190754842
+modifier: 马不前
+tags: $:/tags/ViewToolbar
+title: 摘录标签
+tmap.id: a2c7a6af-f754-4b49-9988-755fe98ad3b9
+type: text/vnd.tiddlywiki
+
+\whitespace trim
+<$button class=<<tv-config-toolbar-class>>
+    selectedClass="tc-selected"
+		tooltip=添加摘录标签
+    aria-label=添加摘录标签> 
+		<$list filter="[<tv-config-toolbar-icons>match[yes]]">
+{{$:/core/images/erase}}
+  </$list>
+	<$list filter="[<tv-config-toolbar-text>match[yes]]">
+        <span class="tc-btn-text">
+				添加摘录标签
+				 </span>
+				 </$list>
+   <$action-listops $tags="摘录"/>
+</$button>

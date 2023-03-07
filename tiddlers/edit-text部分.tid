@@ -1,0 +1,16 @@
+created: 20230105093032856
+creator: 马不前
+modified: 20230105093500688
+modifier: 马不前
+tags: 快速表单
+title: edit-text部分
+tmap.id: 9b72466a-8644-456e-9eea-6ec6d649aa19
+type: text/vnd.tiddlywiki
+
+class是样式属性，不用管，直接用就行。
+
+tiddler是定义的状态条目，可以存在，也可以不存在，随着状态而显示。这个状态条目也就是编辑时的当前条目。
+
+field是字段，因为标题和title字段冲突了，所以用了临时字段。
+
+placeholder是隐藏文字，就是如果你什么也不输入，就会显示的内容。如果有输入文字就会消失。

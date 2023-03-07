@@ -1,0 +1,20 @@
+created: 20230215152721952
+creator: 马不前
+modified: 20230219165254636
+modifier: 马不前
+tags: 
+title: 本站最新动态
+tmap.id: e589370b-b66e-486b-9fed-b9d7899ab79b
+type: text/vnd.tiddlywiki
+
+<div style="column-count:3;">
+<ul>
+  <$list filter="[!is[system]days[-7]!<currentTiddler>!sort[created]]">
+    <li>
+		<$link><$view field="title"/></$link>
+        <$list filter="[<currentTiddler>days[-3]]"> @@color:red;^^新^^@@</$list>
+        <$list filter="[<currentTiddler>days[-30]!days[-7]]"> @@color:black;^^近期^^@@</$list>
+    </li>
+  </$list>
+</ul>
+</div>

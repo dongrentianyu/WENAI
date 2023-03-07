@@ -1,0 +1,21 @@
+created: 20230218173312274
+creator: 马不前
+modified: 20230218173529180
+modifier: 马不前
+tags: 太微官方文档
+title: 通过宏定义自动生成url
+tmap.id: 215fa36d-0723-4cc5-b82a-28a011526487
+type: text/vnd.tiddlywiki
+
+
+```
+\define youtube(video)
+https://www.youtube.com/watch?v=$video$
+\end
+
+<<youtube 1g66s7UbyuU>>
+```
+
+通过打包特定字符串来生成网址，效果非常不错。如果需要全局使用，只需要添加标签`$:/tags/Macro`。
+
+[[文档链接|https://bramchen.github.io/tw5-docs/zh-Hans/#Formatting%20text%20in%20TiddlyWiki]]

@@ -1,0 +1,23 @@
+created: 20220911153804510
+modified: 20230305002030876
+modifier: 马不前
+tags: 太微答疑（已解决的）
+title: 条目总量如何显示？数字化呈现？
+tmap.id: 068371d1-bb0f-401a-9cd0-01c7476d2b48
+type: text/vnd.tiddlywiki
+
+<div class="left-column-border">
+
+* 条目总量如何显示？数字化呈现？
+
+</div>
+
+<div class="right-column-border">
+
+```
+[!is[system]sort[title]count[]]
+```
+用这个代码可以在高级搜索里检索出来,结果,当然也可以搜有标签的,下面显示出来的数字,就是总数
+
+
+</div>

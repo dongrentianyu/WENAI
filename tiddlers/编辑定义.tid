@@ -1,0 +1,28 @@
+created: 20220918055226818
+modified: 20220922043913183
+tags: $:/tags/Macro 时间管理与出版信息的制作
+title: 编辑定义
+tmap.id: 05f1ab79-dfea-4fc1-8ec2-72b352fd96a4
+type: text/vnd.tiddlywiki
+
+\define TableReadWriteToggle()
+<$reveal type="nomatch" state="!!readwritemode" text="readmode">
+    <$button set="!!readwritemode" setTo="readmode">To View Mode</$button>
+</$reveal>
+<$reveal type="match" state="!!readwritemode" text="readmode">
+    <$button set="!!readwritemode" setTo="writemode">To Write Mode</$button></$reveal>
+\end
+
+\define TableCellMultiLine(field, height:"100px")
+<$reveal type="nomatch" state="!!readwritemode" text="readmode">
+<$edit-text field="$field$" placeholder="" tag=textarea minHeight="$height$" autoHeight="yes"/>
+</$reveal>
+<$reveal type="match" state="!!readwritemode" text="readmode"><$wikify name="fieldvalue" text="{{!!$field$}}" output="html"><<fieldvalue>></$wikify></$reveal>
+\end
+
+\define TableCellSingleLine(field, height:"100px")
+<$reveal type="nomatch" state="!!readwritemode" text="readmode">
+<$edit-text field="$field$" placeholder="" minHeight="$height$" autoHeight="yes"/>
+</$reveal>
+<$reveal type="match" state="!!readwritemode" text="readmode"><$wikify name="fieldvalue" text="{{!!$field$}}" output="html"><<fieldvalue>></$wikify></$reveal>
+\end

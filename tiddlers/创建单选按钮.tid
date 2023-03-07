@@ -1,0 +1,32 @@
+created: 20230214125941599
+creator: 马不前
+modified: 20230214130531078
+modifier: 马不前
+tags: 自定制的太微
+title: 创建单选按钮
+tmap.id: 839bb903-e605-476d-9264-c59568419449
+type: text/vnd.tiddlywiki
+
+
+```
+<$select field=123 size="1">
+<$list filter='[has[123]]'>
+<option value=<<currentTiddler>>><$view field='123'/></option>
+</$list>
+</$select>
+
+```
+
+`$:/tags/ViewTemplate/Subtitle`
+
+上面的代码和标签可以生成一个123字段在每一个条目里，里面的值是123的值。对于简单字段来说，可以通过这种方式快速录入。也可以经常改变。同样可以添加list筛选器，使仅在一部分条目里显示。
+
+[[创建单选按钮|https://keatonlao.github.io/tiddlywiki-xp/#%E5%88%9B%E5%BB%BA%E5%8D%95%E9%80%89%E6%8C%89%E9%92%AE]]
+
+
+```
+<$tiddler tiddler="MyPluginTiddler">
+<$radio field="modifier" value="JoeBloggs"> Joe Bloggs</$radio>
+<$radio field="modifier" value="JaneBloggs"> Jane Bloggs</$radio>
+</$tiddler>
+```

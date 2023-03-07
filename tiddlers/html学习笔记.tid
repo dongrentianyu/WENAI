@@ -1,0 +1,14 @@
+created: 20220727080525542
+creator: 马不前
+modified: 20230124174423960
+modifier: 马不前
+tags: 编程
+title: html学习笔记
+tmap.id: b9d8eac3-2a61-476e-824d-e9bf9ee41cb2
+type: text/vnd.tiddlywiki
+
+比如有一些html语法很常见，但是容易忘记，因此做一个笔记进行学习。
+
+```
+<ul>是指无序列表的意思，经常能看到文章列出一系列的链接，就是这个标签。
+```

@@ -1,0 +1,10 @@
+created: 20230213152448525
+creator: 马不前
+modified: 20230215150632774
+modifier: 马不前
+tags: 
+title: 模板测试
+tmap.id: 4240d21b-5036-4a96-b771-5218f757ac48
+type: text/vnd.tiddlywiki
+
+<$button message="tm-new-tiddler"param="模板按钮示例">复制模板按钮示例</$button><$button message="tm-new-tiddler"param="模板按钮示例">复制模板按钮示例</$button><$button message="tm-new-tiddler"param="模板按钮示例">复制模板按钮示例</$button><$button message="tm-new-tiddler"param="模板按钮示例">复制模板按钮示例</$button><$button message="tm-new-tiddler"param="模板按钮示例">复制模板按钮示例</$button><$button message="tm-new-tiddler"param="模板按钮示例">复制模板按钮示例</$button>

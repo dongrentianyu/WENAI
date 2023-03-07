@@ -1,0 +1,11 @@
+created: 20230123180813129
+creator: 马不前
+modified: 20230123184346234
+modifier: 马不前
+tags: tailwindcss
+title: 演示tailwindcss
+tmap.id: 1d471bf3-4d29-4d2a-a282-510930f18db8
+type: text/vnd.tiddlywiki
+
+<button class="bg-red-700 btn hover:bg-red-500">演示如何正确使用太微里的标签</button>
+

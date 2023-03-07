@@ -1,0 +1,34 @@
+created: 20220726123641843
+creator: 马不前
+modified: 20230305013038430
+modifier: 马不前
+tags: 太微使用小技巧
+title: to do
+tmap.id: 0a425dc4-db2e-4da1-aef1-a228cd4bbcf8
+type: text/vnd.tiddlywiki
+
+! 未完成的任务
+
+<$list filter="[!has[draft.of]tag[task]!tag[svg-done]sort[created]]">
+<$checkbox tag="svg-done"> <$link><<toc-caption>></$link></$checkbox><br />
+</$list>
+
+```
+<$list filter="[!has[draft.of]tag[task]!tag[done]sort[created]]">
+<$checkbox tag="done"> <$link><<toc-caption>></$link></$checkbox><br />
+</$list>
+```
+! 已完成的任务
+
+<$list filter="[!has[draft.of]tag[task]tag[svg-done]sort[created]]">
+<$checkbox tag="svg-done"> ~~<$link><<toc-caption>></$link>~~</$checkbox><br />
+</$list>
+
+```
+<$list filter="[!has[draft.of]tag[task]tag[done]sort[created]]">
+<$checkbox tag="done"> ~~<$link><<toc-caption>></$link>~~</$checkbox><br />
+</$list>
+```
+
+
+注释：任务名称只要打上“task”和“done”，就会自动显示在下面。那些是已经完成的。

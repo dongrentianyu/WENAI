@@ -1,0 +1,9 @@
+author: cdruan
+dependents: 
+description: Color manipulation library
+list: 
+name: Color Library
+plugin-type: plugin
+title: $:/plugins/cdr/colorlab
+type: application/json
+version: 0.2.0

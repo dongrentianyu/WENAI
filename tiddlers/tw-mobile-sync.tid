@@ -1,0 +1,18 @@
+created: 20230228143252398
+modified: 20230228144210972
+tags: 林一二插件库 插件介绍
+title: tw-mobile-sync
+tmap.id: 8b089550-d5d2-49db-84bc-bd5584366808
+type: text/vnd.tiddlywiki
+
+太微自身没有自带的多端同步。高手一般自己搭建服务器进行同步。不过安卓端和电脑端的话，可以用林一二这个插件同步。
+
+要求是用太记，安装官方qr插和tw-mobile-sync插件。
+
+配置过程[[b站视频|https://www.bilibili.com/video/BV1Wg411r7Yu/?spm_id_from=333.999.0.0&vd_source=320eae679dcac24aa77b7d3f564fea2a]]，由林一二亲自录制。声音很好听。
+
+插件同步只同步普通条目，不同步系统条目。如果插件更新，里面有专门的同步更新。
+
+如果之前已经在hmtl文件里写了一部分条目，可以通过修改`$:/ state/ tw-mobile-sync/ server`状态条目，修改里面的日期来把同步时间提前。或者直接修改里面的字段。
+
+配置好了后就是五分钟同步一次。电脑端与安卓端会相互同步。

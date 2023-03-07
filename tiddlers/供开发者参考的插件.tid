@@ -1,0 +1,49 @@
+created: 20221213121312191
+creator: 马不前
+modified: 20221213122537373
+modifier: 马不前
+order: 3
+tags: 官方插件
+title: 供开发者参考的插件
+tmap.id: 2c01aa1f-d649-4067-bf17-9f0b0fce0596
+type: text/vnd.tiddlywiki
+
+! 供开发者参考的插件
+;tiddlywiki/tw2parser
+:TiddlyWiki经典解析器。
+;tiddlywiki/xmldom
+:xmldom库，这个插件将xmldom打包供其他插件使用。它不提供任何终端用户可见的功能。
+;tiddlywiki/comments
+:主题式标签的评论，这个插件提供了一个简单的手段来为tiddlers添加线程评论。
+;tiddlywiki/railroad
+:这个插件提供了一个`<$railroad>`部件，用于将铁路图生成为SVG图像。
+;tiddlywiki/async
+:async.js库，这个插件将async.js打包供其他插件使用。它不提供任何终端用户可见的功能。
+;tiddlywiki/tahoelafs
+:Tahoe-LAFS saver，这个插件提供了一个保存模块，用于保存Tahoe最小权限文件系统下的更改。
+;tiddlywiki/nodewebkitsaver
+:个插件提供了一个保存模块，用于在NW.js（以前称为node-webkit）下直接使用TiddlyWiki时保存更改。
+;tiddlywiki/hammerjs
+:HammerJS触摸手势库，这个插件将HammerJS打包供其他插件使用。它不提供任何终端用户可见的功能。
+;tiddlywiki/jszip
+:JSZip library，这个插件提供了处理Zip文件的基元。它还使JSZip库可以被其他插件使用。
+;tiddlywiki/sax
+:这个插件将sax.js打包供其他插件使用。它不提供任何终端用户可见的功能。
+;tiddlywiki/blog
+:博客发布工具，这个插件包含帮助发布博客的工具。用于建立静态HTML页面和文章的模板和工具。
+;tiddlywiki/d3
+:D3插件是一个与D3.js数据可视化框架（http://d3js.org）整合的概念验证演示。它目前还没有达到可以用于任何有用的状态。
+;tiddlywiki/mobiledragdrop
+:移动拖放式垫片，这个插件提供了一个 "垫片"，可以在移动浏览器上实现HTML 5兼容的拖放操作，包括iOS和Android。安装该插件后，有必要第二次保存HTML文件，才能完全启用。
+;tiddlywiki/googleanalytics
+:来自谷歌的网站访问者统计数据，这个插件使你能够使用谷歌分析来跟踪访问你的在线TiddlyWiki文件。基于谷歌的官方代码。
+;tiddlywiki/filesystem
+:将变化从node.js服务器同步到本地文件系统上。文件系统插件在Node.js下使用，将tiddler的变化同步到文件系统。在浏览器中使用时，它是惰性的。
+;tiddlywiki/tiddlyweb
+:将变化从浏览器同步到TW5（node.js）或TiddlyWeb服务器上，这个插件在浏览器中运行，以同步TiddlyWeb兼容的服务器（包括TiddlyWiki 5本身，在Node.js上运行）的tiddler变化。在Node.js下运行时，它是惰性的。由于该插件提供了与服务器同步设置的机制，所以通过浏览器禁用该插件不能被撤销。
+;tiddlywiki/browser-sniff
+:浏览器特征检测，这个插件增加了一些$:/info/ tiddlers，包含了关于当前浏览器的信息。它允许你创建的内容以响应不同浏览器的方式呈现。例如，https://tiddlywiki.com 使用这个插件，根据用户的浏览器，为其提供最佳的入门选项。
+;tiddlywiki/browser-storage
+:浏览器中的本地存储，这个插件使TiddlyWiki能够在浏览器本地存储中保存tiddlers。这意味着变化被储存在浏览器中，并在重新加载基本维基时自动重新应用。在启动时，该插件从本地存储中读取tiddlers。任何与文件中内置的tiddlers相同的都会从本地存储中删除。一旦wiki启动并运行，任何tiddler的变化都会直接写入本地存储中。请谨慎地使用这个插件。有一些未解决的问题和开放性问题。
+;tiddlywiki/aws
+:亚马逊网络服务的扩展和工具，这个插件提供了几个与亚马逊网络服务合作的工具。用于将TiddlyWiki保存为ZIP文件中的单个JavaScript文件的模板，可以作为AWS Lambda函数执行。在这种形式下，TiddlyWiki是一个自包含的单一文件，同时包含代码和数据，就像独立的HTML文件配置一样。在TiddlyWiki的Node.js和Lambda配置下，可用于与AWS服务互动的命令。一个新的 "aws-encodeuricomponent "过滤器，其作用与核心的 "encodeuricomponent "过滤器类似，只是它对单引号字符进行了额外编码。

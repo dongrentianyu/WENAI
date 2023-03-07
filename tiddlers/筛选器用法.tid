@@ -1,0 +1,21 @@
+created: 20220723134922192
+creator: 马不前
+modified: 20230228091326549
+modifier: 马不前
+tags: 太微官方文档
+title: 筛选器用法
+tmap.id: c1ee9719-aa16-4a77-9326-84d20e995972
+type: text/vnd.tiddlywiki
+
+目前有一些简单的用法。比如最简单也是最常见的就是把某些条目演示出来，代码后面再复制。另一种用法就是kin filter，还在学习中。
+
+常用的举例：下面是通过筛选标签“书籍”，筛选出相关条目来的。有一个问题，就是如何筛选出更多，更深层次的内容。这好像就要用到kin filter。
+
+
+<$list filter="[tag[书籍]]"/>
+
+
+<$list filter="[tag[待处理的]]"/>
+
+ 
+

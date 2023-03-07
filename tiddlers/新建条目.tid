@@ -1,0 +1,24 @@
+caption: 新建条目
+created: 20230103160211917
+creator: 马不前
+modified: 20230114180610853
+modifier: 马不前
+tags: 
+title: 新建条目
+tmap.id: 070470fc-ac48-4b48-825f-79e33b7fc2e5
+type: text/vnd.tiddlywiki
+
+<<list-searchx filter:"[!is[system]]" class:"alert alert-info" >>
+
+|''条目标题：''|<$edit-text class='tc-edit-texteditor' tiddler='$:/state/NewTiddlerForm' field='name_temp' placeholder='Tiddler Name'/>|
+|''tags:''|<$edit-text class='tc-edit-texteditor' tiddler='$:/state/NewTiddlerForm' field='tags' default='' placeholder='tags'/>|<<select-field-value "tags"  "[list[$:/StoryList]each[title]get[title]][list[$:/StoryList]each[tags]get[tags]regexp{$:/state/NewTiddlerForm!!tags}!prefix[$:/]]-[is[system]]">>|
+|''正文内容：''|<$edit-text class='tc-edit-texteditor' tiddler='$:/state/NewTiddlerForm' field='text' placeholder='Tiddler Text' default='' />|<|
+<$button>
+ <$action-createtiddler $basetitle= {{$:/state/NewTiddlerForm!!name_temp}} $overwrite="yes"  text={{$:/state/NewTiddlerForm!!text}} tags={{$:/state/NewTiddlerForm!!tags}} > 
+</$action-createtiddler>
+''新建条目''
+</$button><$button>清除格式
+<$action-setfield $tiddler='$:/state/NewTiddlerForm' 
+name_temp=''
+tags=''
+text='' />

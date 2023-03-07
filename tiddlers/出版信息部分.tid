@@ -1,0 +1,23 @@
+created: 20220918055646768
+creator: 马不前
+modified: 20230102090741588
+modifier: 马不前
+readwritemode: writemode
+tags: 时间管理与出版信息的制作
+title: 出版信息部分
+tmap.id: 4fb7cac4-bf49-4933-92c3-c58287e3d1d4
+type: text/vnd.tiddlywiki
+
+<<TableReadWriteToggle>>
+
+|!author|^<<TableCellMultiLine "author">>|
+|!译者|^<<TableCellMultiLine "译者">>|
+|!丛书|^<<TableCellMultiLine "丛书">>|
+|!出品方|^<<TableCellMultiLine "出品方">>|
+|!字数|^<<TableCellMultiLine "字数">>|
+|!总页数|^<<TableCellMultiLine "总页数">>|
+|!出版年份|^<<TableCellMultiLine "出版年份">>|
+|!ISBN|^<<TableCellMultiLine "ISBN">>|
+|!备注|^<<TableCellMultiLine "备注">>|
+
+

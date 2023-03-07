@@ -1,0 +1,20 @@
+created: 20230306043200895
+modified: 20230306043822316
+tags: 太微官方文档
+title: 包含维基
+tmap.id: 67d71063-2e0d-4354-ae18-571eee8ae0dd
+type: text/vnd.tiddlywiki
+
+[[xp文档|https://keatonlao.github.io/tiddlywiki-xp/#TiddlyWiki%20on%20Node.js]]
+
+[[b站视频|https://www.bilibili.com/video/BV1By4y1f7Cr/?spm_id_from=333.999.0.0&vd_source=320eae679dcac24aa77b7d3f564fea2a]]
+
+包含维基的一个好处是可以提高维基的性能，或者说多种组合能力。
+
+比如最常见的，把图片，pdf文件一类的放入另一个维基，然后在主维基只有在打开时，或者调用时才会使用到，不使用时就不会加载。性能会大幅提升。
+
+但目前有一个问题是，太记发布网址的模板还不支持这种形式。因为需要修改其中的info文件。进而就需要修改其中的发布js文件。而且上传到github仓库里的话，还需要把另一个维基也一同上传过去。不然就会报错。
+
+但两个维基本来是独立的，所以很容易产生冲突。而无法正常发布。
+
+最终的结论就是，只有在太记本地化使用可以，想上传到github仓库远程同步，需要自己重新写代码，当前没有合适的插件可以处理。

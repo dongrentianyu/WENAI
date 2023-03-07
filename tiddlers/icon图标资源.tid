@@ -1,0 +1,12 @@
+created: 20230201055808451
+creator: 马不前
+modified: 20230201055948220
+modifier: 马不前
+tags: 
+title: icon图标资源
+tmap.id: c6702947-1c32-4d54-844e-672208c2451e
+type: text/vnd.tiddlywiki
+
+有时需要自己做一个按钮什么的，就会用到图标。当然自己画也是可以的。格式以svg为佳。不过我发现一个问题就是迁移笔记的话，图片迁移会丢失。后面常用的还是阿里图标。或者直接用本地太微自带的图标就挺好的。
+
+https://icons-for-free.com/find-free-icon-book/

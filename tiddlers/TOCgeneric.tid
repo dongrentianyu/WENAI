@@ -1,0 +1,10 @@
+created: 20230301030816476
+modified: 20230301030906404
+tags: 插件介绍
+title: TOCgeneric
+tmap.id: 22576b9e-b278-4fbc-b3a1-62c7e0c9873a
+type: text/vnd.tiddlywiki
+
+`$:/plugins/HCHaase/TOCgeneric`
+
+不知道cpl里有没有，这个插件相当于会在每个条目的下面展示tags和links的条目。相对来说简单一点。

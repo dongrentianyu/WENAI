@@ -1,0 +1,21 @@
+created: 20230206200549818
+creator: 马不前
+modified: 20230207094735628
+modifier: 马不前
+title: 添加前缀按钮说明
+tmap.id: cf165144-42fa-442c-909c-54395ba3cb03
+type: text/vnd.tiddlywiki
+
+[[论坛讨论|https://talk.tiddlywiki.org/t/is-it-possible-to-change-how-tw-numbers-new-tiddlers/6055]]
+
+从上面的讨论中，发现可以修改新加条目的样式。重点是[[unusedtitle|https://bramchen.github.io/tw5-docs/zh-Hans/#unusedtitle%20Macro]]和[[ActionCreateTiddlerWidget|https://bramchen.github.io/tw5-docs/zh-Hans/#ActionCreateTiddlerWidget]]及[[tm-new-tiddler|https://bramchen.github.io/tw5-docs/zh-Hans/#WidgetMessage%3A%20tm-new-tiddler]]
+
+然后把basetitle修改成当前条目标题，就实现了添加标签时获取前缀了。`$basetitle=<<currentTiddler>>`
+
+里面还有更多细节，反正可以有很多种方式获取标题，应该是很方便的。
+
+本来我是想要自动加上英文反斜杠分隔符的。但实在是操作不了。因为需要把变量作为变量嵌入进去。需要在unusedtitle中的basetitle，然后把里面的basename用当前标题。然后再生成里面的basetitle，但unusedtitld是用微件的形式控制的。很难搞。
+
+后面解决办法就是解决节点丸，现在节点丸可以识别前缀。但不会反向显示。比如这个条目在''添加前缀按钮''里就会有一个节点丸。但本条目不会有''添加前缀按钮''的节点丸。
+
+图标很容易获取到。

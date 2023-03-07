@@ -1,0 +1,20 @@
+created: 20230206175049827
+creator: 马不前
+modified: 20230206175345368
+modifier: 马不前
+tags: 
+title: 显示代码
+tmap.id: a635bd00-4115-4c20-b893-c03a600f6ab3
+type: text/vnd.tiddlywiki
+
+<<code src:"<details>
+    <summary>显示代码</summary>
+    <pre><code><$view><pre><code>
+</details>" >>
+
+应该是直接用的html元素来实现显示代码，看着非常方便。下面是效果演示。
+
+<details>
+    <summary>显示代码</summary>
+    <pre><code><$view><pre><code>
+</details>

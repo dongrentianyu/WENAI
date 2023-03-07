@@ -1,0 +1,18 @@
+created: 20230110160117003
+creator: 马不前
+modified: 20230112044942659
+modifier: 马不前
+tags: 
+title: git与github及其desktop
+tmap.id: 11660886-0049-46d6-9d1d-c9cb5021872a
+type: text/vnd.tiddlywiki
+
+首先我们使用git来管理我们的文件版本，所以我们需要去安装git软件。可去网上搜索安装教程。
+
+而为了和其他开发者一同''开发''//~~（白嫖）~~//，我们需要github账号。github账号QQ邮箱就可以注册，但github在国内特别慢，有时直接打不开，于是需要学习[[科学上网]]。
+
+有了github账号就需要学习一些基本操作，比如如何建立仓库，本地仓库如何与github上的仓库保持一致等等。这此网上都有大量的教程。文字版本的和视频的都有。
+
+那么我们实际操作起来，就需要了解一定的git命令行的知识。重点是要了解其中的概念。但如果不是编程人员，或者以后不从事编程相关行业的，那么我建议用github desktop。
+
+我们在太记里会经常用到github desktop来回滚，以免我们丢失文件。而github desktop又可以满足常用的git命令需求，所以我们直接用github desktop就行。

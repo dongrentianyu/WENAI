@@ -1,0 +1,28 @@
+created: 20221025183739752
+creator: 马不前
+modified: 20221025184037130
+modifier: 马不前
+tags: 目录导航栏宏加强版
+title: 目录导航栏宏加滚动样式
+tmap.id: d55aaac8-5674-4bf4-b477-89d8d65fdbcd
+type: text/vnd.tiddlywiki
+
+
+```
+<style>
+<!-- 修改下面的max-height数值就可以看到效果了-->
+<!-- 技术来源于EricShulman，我是在论坛上看到他的回答保存下来的。-->
+.colortext
+   { font-variant:small-caps; color: red; }
+.myTOC .tc-table-of-contents, .myTOC .tc-tabbed-table-of-contents-content
+   { max-height:200px; overflow: hidden auto; }
+</style>
+<span class="myTOC">
+<$macrocall
+	$name="navx"
+	tag="太微使用笔记"
+  selectedTiddler="$:/temp/toc/selectedTiddler"
+	unselectedText="<p>选择目录中的一个主题，点击箭头可展开主题。</p>"
+	missingText="<p>佚失条目。</p>"/>
+</span>
+```

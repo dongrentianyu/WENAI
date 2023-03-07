@@ -1,0 +1,20 @@
+created: 20230203175056315
+creator: 马不前
+modified: 20230228091326550
+modifier: 马不前
+tags: 错误案例 太微官方文档
+title: 字段的显示与隐藏
+tmap.id: 9ad1e675-1723-4d06-98e8-d005f283bd4d
+type: text/vnd.tiddlywiki
+
+好久没编辑我的主wiki，这次编辑想添加一个description字段，发现添加了但在编辑状态下看不到。当时给我吓得。然后发现一部分字段无法显示。我就去查找是什么插件导致的。
+
+我没有直接在当时的wiki里修改，而是复制了一份多文件版本的，在里面修改。同时我也备份了一个html文件。
+
+修改过程中，主要猜想是插件出了问题。找了一下，没找到什么插件出问题了。继续找发现部分字段无法显示的基本上是钓鱼插件的字段。像difficulty、due、grade等字段，你装上了钓鱼插件的话，也可以在你的wiki里看到。但你会发现你手动编辑的不会出现在编辑状态中，但可以在信息里查看。或者你导出这个tid条目查看也可以。所以我就猜想是不是因为更新钓鱼插件而导致的。但我禁用钓鱼插件后发现description还是无法显示。一时之间不知道该如何处理。忽然想起之前和凹夫几讨论过，钓鱼插件的字段是由某一个条目隐藏的。翻看群聊记录发现是由[[此条目|https://tiddlymemo.org/manual/zh-Hans#%24%3A%2Fconfig%2FEditTemplateFields%2FVisibility%2Freps]]控制的。我点进去一看，发现前缀`$:/config/EditTemplateFields/Visibility/`，后面接了一个reps，钓鱼插件中是由reps来控制特定字段是否显示。我就直接搜索`$:/config/EditTemplateFields/Visibility/description`，发现被设置成hide。我修改为show后就正常显示了。
+
+然后我又找一圈插件，想找出是什么插件更新实现的。因为更大的可能是我自己修改的，但我又想不通为什么自己会去修改这个，因为没必要啊。但是没找到。我又猜想是不是因为tiddlywiki更新的缘故，但看了更新文档，也没有明确提到。再想，我觉得原因可能是我在把这些条目从一个文件夹里移过来移过去中，没有覆盖导致的。很可能是这样的。
+
+总结，想显示或者隐藏某个字段或者某些字段可以用`$:/config/EditTemplateFields/Visibility/`来控制。如果是一些，可以去查看钓鱼插件上面的链接里写法。
+
+相同的按钮样式也可以选择隐藏还是显示。[[官方对应链接|https://bramchen.github.io/tw5-docs/zh-Hans/#Creating%20new%20buttons%20for%20the%20ViewToolbar%20and%20page%20controls]]

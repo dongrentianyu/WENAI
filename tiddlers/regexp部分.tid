@@ -1,0 +1,26 @@
+author: Tobias Beer
+created: 20230105102241203
+creator: 马不前
+modified: 20230105123349388
+modifier: 马不前
+tags: 
+title: regexp部分
+tmap.id: cf9a3388-b4bb-4d1d-bc10-076b996f64c7
+type: text/vnd.tiddlywiki
+
+示例中可以看到`[!is[system]regexp[Wiki]]`能筛选出标题含有wiki的条目。我们要在筛选器里加入这部分内容。但筛选的并不是一个常量wiki，而是一个变量——我们输入的量。这要怎样使用呢？
+
+太微中文社区教程里也有[[写|https://tiddly-wiki-chinese-tutorial.vercel.app/#%E5%9C%A8%E7%AD%9B%E9%80%89%E5%99%A8%E4%B8%AD%E4%BD%BF%E7%94%A8%E5%AE%8F%E6%88%96%E5%8F%98%E9%87%8F]]。其实就是外层用一对花括号，就可以。
+
+输入是用[[edit-text部分]]，之前有说过。在外层我们用表格包装起来就可以实现效果了。
+
+```
+|author:|<<select-field-value "author"  "[each[author]get[author]regexp{$:/state/NewTiddlerForm!!author}]">>|<$edit-text class='tc-edit-texteditor' tiddler='$:/state/NewTiddlerForm' field='author' default='' placeholder='author'/>|
+```
+
+可以看下面的例子。
+
+当你在旁边输入1的时候会显示123、1234和1三个值。
+
+
+|author:|<<select-field-value "author"  "[each[author]get[author]regexp{$:/state/NewTiddlerForm!!author}]">>|<$edit-text class='tc-edit-texteditor' tiddler='$:/state/NewTiddlerForm' field='author' default='' placeholder='author'/>|

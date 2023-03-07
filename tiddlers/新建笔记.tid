@@ -1,0 +1,23 @@
+caption: 新建笔记
+created: 20230114175354158
+creator: 马不前
+modified: 20230115162036572
+modifier: 马不前
+tags: 
+title: 新建笔记
+tmap.id: 45928f0c-2dae-401b-b97a-684ad235cab6
+type: text/vnd.tiddlywiki
+
+|''标题：''|<$edit-text class='tc-edit-texteditor'tiddler='$:/state/121' field='name_temp' placeholder='Tiddler Name'/>|<|
+|''tags:''|<<quickforms "$:/state/121" "tags"  "[list[$:/StoryList]each[title]get[title]][list[$:/StoryList]each[tags]get[tags]regexp{$:/state/121!!tags}]-[prefix[Draft]]-[prefix[$:/]]">>|>|
+|''内容：''|<$edit-text class='tc-edit-texteditor' tiddler='$:/state/121' field='text' placeholder='Tiddler Text' default='' />|
+
+<$button>
+ <$action-createtiddler $basetitle= {{$:/state/121!!name_temp}} $overwrite="yes"  text={{$:/state/121!!text}} tags={{$:/state/121!!tags}} > 
+</$action-createtiddler>
+''新建条目''
+</$button><$button>清除格式
+<$action-setfield $tiddler='$:/state/121' 
+name_temp=''
+tags=''
+text='' />

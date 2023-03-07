@@ -1,0 +1,9 @@
+created: 20230225170256613
+creator: 马不前
+modified: 20230225170256613
+modifier: 马不前
+tags: $:/tags/ViewTemplateBodyFilter
+title: $:/plugins/linonetwo/tw-whiteboard/tiddlywiki-ui/ViewTemplate/body/view-whiteboard-cascade-filter
+type: text/vnd.tiddlywiki
+
+[field:type[application/tldr]then[$:/plugins/linonetwo/tw-whiteboard/tiddlywiki-ui/ViewTemplate/body/view-whiteboard]]

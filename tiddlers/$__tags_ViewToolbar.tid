@@ -1,0 +1,7 @@
+created: 20230114134002028
+creator: 马不前
+list: $:/core/ui/Buttons/more-tiddler-actions quick-add-tags $:/core/ui/Buttons/new-here 添加前缀按钮 复制标签 $:/core/ui/Buttons/edit $:/core/ui/Buttons/close $:/core/ui/Buttons/fold-bar $:/plugins/oeyoews/copy-title/copybutton $:/core/ui/Buttons/close-others $:/core/ui/Buttons/info $:/plugins/kookma/utility/ui/Buttons/DraggableLink $:/plugins/kookma/trashbin/ui/toolbar-button $:/plugins/Gk0Wk/page-toc/PageTOCButton $:/core/ui/Buttons/new-journal-here $:/core/ui/Buttons/clone $:/core/ui/Buttons/export-tiddler $:/core/ui/Buttons/delete $:/core/ui/Buttons/permalink $:/core/ui/Buttons/permaview $:/plugins/bimlas/locator/viewtemplate/open-in-sidebar $:/xp/ui/Buttons/aggregation-view $:/xp/ui/Buttons/view-subtiddler $:/plugins/felixhayashi/tiddlymap/misc/quickConnectButton $:/core/ui/Buttons/fold-others $:/core/ui/Buttons/fold $:/plugins/linonetwo/tw-whiteboard/tiddlywiki-ui/ViewToolbar/Buttons/OpenInFullScreenWhiteBoardButton $:/core/ui/Buttons/open-window $:/plugins/tiddlywiki/qrcode/ViewToolbarButton $:/plugins/linonetwo/open-in-external-app/ViewToolbarButton $:/plugins/linonetwo/zx-script/ViewToolbarButton $:/plugins/kookma/favorites/ui/buttons/add-remove 摘录标签
+modified: 20230208154014585
+modifier: 马不前
+title: $:/tags/ViewToolbar
+type: text/vnd.tiddlywiki

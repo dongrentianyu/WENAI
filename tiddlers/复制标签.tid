@@ -1,0 +1,23 @@
+caption: {{$:/images/google-material-design/donut-small}} 复制标签
+created: 20230207172251511
+creator: 马不前
+description: 复制标签
+modified: 20230207172842342
+modifier: 马不前
+tags: $:/tags/ViewToolbar
+title: 复制标签
+tmap.id: b59f86c3-26d7-41a5-84f2-df15fca6ce22
+type: text/vnd.tiddlywiki
+
+\whitespace trim
+<$button
+popup=<<qualify "$:/state/popup/fishingdeck">>
+    tooltip="复制标签"
+    aria-label="复制标签"
+    class=<<tv-config-toolbar-class>>
+    selectedClass="tc-selected">
+		<$action-sendmessage $message="tm-new-tiddler"  tags={{!!tags}}  />
+	<$list filter="[<tv-config-toolbar-icons>match[yes]]">
+{{$:/images/google-material-design/donut-small}}</$list>
+<$list filter="[<tv-config-toolbar-text>match[yes]]"><span class="tc-btn-text">复制标签</span></$list>
+	</$button>

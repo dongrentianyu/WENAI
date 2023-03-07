@@ -1,0 +1,37 @@
+created: 20230103113326395
+creator: 马不前
+modified: 20230105082809791
+modifier: 马不前
+tags: 链接按钮宏
+title: 链接按钮宏/说明
+tmap.id: a00c7829-29e3-453c-bd2f-c099dee131c8
+type: text/vnd.tiddlywiki
+
+宏文件不是我原创的，是[[官方中文文档|https://bramchen.github.io/tw5-docs/zh-Hans/#%24%3A%2Feditions%2Ftw5.com%2Fdoc-macros]]里就有的。原本只是作为添加常用链接所使用，而且只有背景颜色的选择，我把背景改成了style。理论上也可以设置几个常用的。原理是一样的。
+
+之前太记里用设拉子的链接，会直接在太记内部显示，估计是一个bug，还在等开发者修复。但我其实也不太喜欢设拉子插件的样式。因为只有几种很简单的样式，我觉得作为前端库来说，不太够。所以还是需要直接用css相关的内容来设置啊。
+
+宏使用很简单。
+
+```
+<<linkcss "这里是文字，旁边放链接，最后放样式" "一串链接" "一串样式" >>
+```
+<<linkcss "举例：打开本站" "https://dongrentianyu.github.io/WENAI/" "background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 12px 24px;
+    
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2px 1px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;" >>
+	
+* 但有一些样式，像悬停就不好显示。我不清楚如何在style里写。不知道该如何放进去。
+* 理论上可以自定义自己常用的。
+* 理论上也可以定义只需要放链接的按钮，像github链接一类的，只需要放链接就可以了。
+*建议一些常见的平台做一个常用的样式，
+
+<<linkgithub "太微中文社区仓库" "https://github.com/tiddly-gittly/TiddlyWiki-Chinese-Tutorial"  >>

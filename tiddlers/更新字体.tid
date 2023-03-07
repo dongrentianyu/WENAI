@@ -1,0 +1,19 @@
+created: 20230209192037780
+creator: 马不前
+modified: 20230209192815000
+modifier: 马不前
+tags: 
+title: 更新字体
+tmap.id: b5711d29-0def-4e44-a46b-deee0702cfa6
+type: text/vnd.tiddlywiki
+
+怎么更新的呢？首先去[[谷歌字体网|https://fonts.google.com/]]找一款喜欢的。我发现好像有好几个谷歌字体网站，不知道为什么，反正就这个是可以正常使用的。
+
+然后新建一个条目，标题随便写，或者写某种字体类型也可以，打上标签`$:/tags/RawMarkup`，里面的正文一般是下面的格式。
+
+```
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@200&display=swap" rel="stylesheet">
+```
+找到网站右边复制一段类似上面的代码放到条目正文里。然后去[[$:/themes/tiddlywiki/vanilla/settings/fontfamily]]这个条目里添加上你选择的格式放在最前面。比如我的是`'Noto Serif SC', serif;`。保存刷新就可以看到效果了。
+
+不过我发现上面网站里没几款字体。楷体都没找到，只有这种宋体或者衬线体。另一款比较黑的，对英文支持不太好。英文根本就不能阅读了，简直是草书。目前先用这个字体吧，配合整体的绿色，感觉还是很小清新的。

@@ -1,0 +1,24 @@
+created: 20230213152350048
+creator: 马不前
+modified: 20230218143053243
+modifier: 马不前
+tags: 
+title: template
+tmap.id: b39cd0ad-dcd1-49ca-83cf-3eae7e4165fa
+type: text/vnd.tiddlywiki
+
+\whitespace trim
+<$set name="popupstate" value=<<qualify "$:/state/popup/showtid">> >
+<div>
+<$button class="tc-btn-invisible" popup=<<popupstate>>>{{$:/images/boxicons/regular/template}}</$button>
+</div>
+<$reveal type="popup" state=<<popupstate>> position="below" updatePopupPosition="yes" class="tc-popup-keep" retain="yes" style="overflow-y:hidden;">
+<div>
+<div>
+<div>
+<$transclude mode="block"/>
+</div>
+</div>
+</div>
+</$reveal>
+</$set>

@@ -1,0 +1,19 @@
+created: 20220911153730518
+modified: 20230305002030875
+modifier: 马不前
+tags: 太微答疑（已解决的）
+title: 如何显示？左边是问题，右边是答案。
+tmap.id: b3366308-d032-4cab-8e10-b24f66ac195a
+type: text/vnd.tiddlywiki
+
+<div class="left-column-border">
+
+* 如何显示？左边是问题，右边是答案。
+
+</div>
+
+<div class="right-column-border">
+
+有一个插件可以使用,$:/xp/columns/preview,在cpl里面可以搜到
+
+</div>

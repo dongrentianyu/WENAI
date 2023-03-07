@@ -1,0 +1,11 @@
+created: 20220911235344264
+modified: 20230305002030877
+modifier: 马不前
+tags: 太微答疑（已解决的）
+title: 自动补全括号、显示行号、高亮当前行
+tmap.id: 5341c055-682d-498f-a503-bc401fd2389b
+type: text/vnd.tiddlywiki
+
+自动补全括号、显示行号、高亮当前行
+
+这些在设置里面有，好像是code mirror里。

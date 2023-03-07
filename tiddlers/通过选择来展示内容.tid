@@ -1,0 +1,22 @@
+created: 20230214130937784
+creator: 马不前
+modified: 20230214132023107
+modifier: 马不前
+tags: 自定制的太微
+title: 通过选择来展示内容
+tmap.id: 074efe17-d28f-4063-ab05-0b4a7adcf47e
+type: text/vnd.tiddlywiki
+
+
+```
+<$select tiddler='$:/generated-list-demo-state'>
+<$list filter='[tag[TableOfContents]]'>
+<option><$view field='title'/></option>
+</$list>
+</$select>
+<$tiddler tiddler={{$:/generated-list-demo-state}}>
+<$transclude mode='block'/>
+</$tiddler>
+```
+
+通过上面的代码可以用来显示不同的内容。不过需要把状态条目调整一下。可以添加link链接。css样式什么的，就不考虑了。

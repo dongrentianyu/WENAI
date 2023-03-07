@@ -1,0 +1,24 @@
+created: 20230105070202007
+creator: 马不前
+modified: 20230105082809815
+modifier: 马不前
+tags: 链接按钮宏 $:/tags/Macro
+title: demo链接样式
+tmap.id: 70f2d0e8-7c7d-4bcf-8b4d-5d26745e9c5a
+type: text/vnd.tiddlywiki
+
+\define linkdemo(link) 
+<a href=<<__link__>> target="_blank" class="tc-btn-big-green" 
+style=" 
+	background-color:#e4685d;
+	border-radius:17px;
+	
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	padding:6px 13px;
+	text-decoration:none;
+	"> ''Demo''</a>
+\end

@@ -1,0 +1,75 @@
+created: 20221124111352293
+modified: 20221124121315671
+order: 2
+tags: 知识链-创建保存-插件列表-功能条目
+title: 创建保存
+tmap.id: 77452faa-3448-420a-a841-5a346360e6a6
+type: text/vnd.tiddlywiki
+
+
+
+!! 创建保存
+
+"""
+''HTML文件''与''文件夹'' 2种存储形式
+''桌面浏览器''，''服务端软件''，''应用软件'' 3种使用方式。
+"""
+
+<<<
+因子，聚集，自由组合
+
+创建保存思维导图（在左上角）：https://www.zhixi.com/view/70759713
+<<<
+
+* PC（Windows、macOS、Linux）：[[TidGi|https://github.com/tiddly-gittly/TiddlyGit-Desktop]]、[[TiddlyDesktop|https://github.com/TiddlyWiki/TiddlyDesktop/releases]]、[[Timimi|https://ibnishak.github.io/Timimi/]]、[[TiddlyStow|https://twpub-book.netlify.app/tiddlystow.html]]、NodeJS（npm install -g tiddlywiki）
+* Android：[[Tiddloid|https://github.com/donmor/Tiddloid]] + [[WebDav_Server_Pro_1.17|https://zhuanlan.zhihu.com/p/543783107]]
+* IOS与IPad：Quine2、VPS（虚拟专用服务器）
+* VPS与服务器：NodeJS、WebDav、[[TiddlyHost|https://tiddlyhost.com]]
+
+
+NodeJS:[[如何启动一个NodeJS的TiddlyWiki项目]]
+
+WebDav: WsgiDAV(python通过PIP安装或者MSI直接安装程序)，Rclone，IIS WebDav
+
+[[HTML与文件夹的转换]]:tiddlywiki单文件可以解压后提供给nodejs，TidGi使用
+
+<br><br>
+
+
+"""
+''01、安卓移动服务器''
+
+将手机作为知识库存储位置吧。  
+安卓方案：WebDav_Server_Pro_1.17 + Tiddloid
+
+WebDav_Server_Pro_1.17安装使用简单
+支持太微文档列表 支持为太微在桌面创建快捷方式，支持备份、创建副本，支持其它设备通过浏览器、文件资源管理器和局域网访问，你可以和Tiddloid配合使用，解锁高级功能。
+webdav服务器、系统与浏览器API、nodejs运行环境
+移动服务器、桌面服务器、网站服务器、云盘与同步
+
+
+''02、Termux与NodeJS''
+
+Termux的bash.bashrc文件位置：$PREFIX/etc/bash.bashrc
+Termux中手机内部存储位置：$HOME/storage/shared   
+[[在桌面端访问Termux终端]] 
+在Android中配置NodeJS：[[TiddlyWiki-XP Serving TW5 from Android|https://keatonlao.github.io/tiddlywiki-xp/#Serving%20TW5%20from%20Android]]
+"""
+
+
+''03、HTML与文件夹的转换''
+
+{{HTML与文件夹的转换}}
+
+!!! 保存备份同步	
+# TiddlyStow：https://twpub-book.netlify.app/tiddlystow.html
+# Timimi电脑浏览器插件 +  Tiddloid + Onedrive
+# Syncthing 文件同步工具开源版（商业版：微力）
+# 网络图床插件：OSS Uploader。
+# WebDav 服务存储文件到本地或云端的两个插件：FileUploads、FileUploads:PUT。
+# HtmlWiki三剑客：tiddlystow ，timimi ，kopia。
+# widdler：https://github.com/qbit/widdler
+# savetrail：把改动保存为json格式数据。
+# TiddlyWiki-Server（Rust写的WebDav服务器）： https://github.com/nathanielknight/tiddly-wiki-server
+# 备份软件：Kopia、Git。
+<br><br>

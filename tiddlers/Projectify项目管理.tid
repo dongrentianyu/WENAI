@@ -1,0 +1,19 @@
+created: 20230105063552446
+creator: 马不前
+linkcode: <<linkcode "https://github.com/thaddeusjiang/projectify" >>
+linkdemo: <<linkdemo "https://thaddeusjiang.github.io/Projectify/demo.html" >>
+modified: 20230123174934617
+modifier: 马不前
+tags: 单独或者无系列的 插件介绍
+title: Projectify项目管理
+tmap.id: e7943a41-8df7-4eee-929a-9aaac1d18c89
+type: text/vnd.tiddlywiki
+
+<<<
+{{!!linkdemo}}{{!!linkcode}}
+<<<
+
+
+项目管理或者任务管理安排插件。不过适合单独开一个wiki使用。因为每一个任务就是一个条目。如果要想all in one，那么建议使用库克插件的插件。
+
+内置移动端适配和语言包适配，但就是不好修改底层内容，想自己修改添加东西不太好操作。

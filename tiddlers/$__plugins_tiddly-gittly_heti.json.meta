@@ -1,0 +1,11 @@
+Modern.TiddlyDev#SHA256-Hashed: b5ecab84b00a1fe740ec89ad883b0eb546e43d5d7da9c24b65ba8e81ff774bc3
+author: tiddly-gittly
+core-version: >=5.1.22
+dependents: 
+description: 专为中文内容展示设计的排版样式增强
+list: readme license
+name: Heti
+plugin-type: plugin
+title: $:/plugins/tiddly-gittly/heti
+type: application/json
+version: 0.0.4

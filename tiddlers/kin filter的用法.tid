@@ -1,0 +1,34 @@
+created: 20220725162832074
+creator: 马不前
+modified: 20230124183052830
+modifier: 马不前
+tags: 插件介绍
+title: kin filter的用法
+tmap.id: 5b3c982d-5ded-4bb9-b7af-a1ccbf9fcc87
+type: text/vnd.tiddlywiki
+
+<$list filter="[tag[待处理的]]+[kin::to[太微使用笔记]]">
+
+ <$link><<currentTiddler>></$link>
+
+ {{!!text}}
+
+</$list>
+
+https://bimlas.gitlab.io/tw5-kin-filter/
+
+还是有些复杂，后期可能会用到。教程链接先放在这里。
+
+```
+<$list filter="[tag[公式]]+[kin::to[电路]]">
+
+ <$link><<currentTiddler>></$link>
+
+ {{!!text}}
+
+</$list>
+```
+
+代码就放在上面了。
+
+哇塞，基本上搞明白了祖先树的用法。以上面的代码为例，很多个条目会有多个标签。然后要对这多个标签进行查找。那就可以通过祖先树的方式，比如查找带有xx标签的内容，如果删去了祖先树，那就是单纯查找这些标签的内容。但是加上祖先树，就可以确定是在哪一个区域内查找。这样一些很细微的内容就可以查找出来了。

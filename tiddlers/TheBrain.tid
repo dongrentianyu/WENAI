@@ -1,0 +1,11 @@
+caption: TheBrain
+created: 20211220184056323
+creator: 马不前
+modified: 20230112164857429
+modifier: 马不前
+tags: 
+title: TheBrain
+tmap.id: 6956ff87-0a24-47d5-a263-b6bbaf20d331
+type: text/vnd.tiddlywiki
+
+<$echarts $tiddler="$:/plugins/Gk0Wk/echarts/addons/TheBrain.js" aliasField="caption" levels="2" graphTitle="The Barin View" $height="100%" />

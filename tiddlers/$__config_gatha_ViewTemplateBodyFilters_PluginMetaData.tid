@@ -1,0 +1,9 @@
+created: 20220201054343503
+creator: 马不前
+modified: 20230225170256613
+modifier: 马不前
+tags: $:/tags/ViewTemplateBodyFilter
+title: $:/config/gatha/ViewTemplateBodyFilters/PluginMetaData
+type: text/vnd.tiddlywiki
+
+[has[plugin-draft]then[$:/plugins/kookma/gatha/ui/view-template-plugin-meta-data]]

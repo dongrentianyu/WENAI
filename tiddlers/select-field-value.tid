@@ -1,0 +1,22 @@
+created: 20230105094852774
+creator: 马不前
+modified: 20230105124744918
+modifier: 马不前
+tags: 
+title: select-field-value
+tmap.id: b051ded7-47ab-495d-8ff1-e350a712bbb9
+type: text/vnd.tiddlywiki
+
+从名字可以看出这是在选取字段的值。
+
+我们从原文件中拿一个例子来解释。
+
+`<<select-field-value "category" "[each[category]get[category]]">>`
+
+这段代码，先使用宏，写上宏的名称，然后第一个引号内容是字段名称，第二个引号内容是筛选器。正常get会把所以内容都显示出来，里面通常会包含重复内容。所以要加上[[each|https://bramchen.github.io/tw5-docs/zh-Hans/#get%20Operator]]消除重复项。
+
+''注意这三个名称需要保持一致，不然显示内容会不一样。后面也有需要保持一致的情况。''
+
+宏文件需要打上`$:/tags/Macro`的标签才能全局生效。如果只做一个那可以像原文件一样放在开头来实现。如果想全局使用就需要加上这个标签。
+
+必须给宏文件加上限定状态条目，不然没有效果。因为原文件是宏和内容放在一起的，所以我们这里同样必须加上`tiddler='$:/state/NewTiddlerForm'`，这样才会对用`tiddler='$:/state/NewTiddlerForm'`限定的状态条目有效果，不然只会是对添加器的条目有效果。

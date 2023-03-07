@@ -1,0 +1,54 @@
+author: 1234
+created: 20230105101110021
+creator: 马不前
+modified: 20230105123558959
+modifier: 马不前
+tags: 快速表单
+title: 表单改进
+tmap.id: 55f1fb5a-ab01-409d-a7ce-f6cdcbdf2785
+type: text/vnd.tiddlywiki
+
+! 标题部分
+
+标题是唯一的。所以如果你在标题里输入了wiki里已有条目，那么这个条目相关的内容都会被修改，字段和正文。而且除了用git备份工具外可以找回，一般是很难找回的。那么就需要我们在输入时可以显示是否有相关的条目。这里我们就需要用到[[正则|https://bramchen.github.io/tw5-docs/zh-Hans/#regexp%20Operator]]相关操作了。具体先看文档，后看[[regexp部分]]。
+
+同样，我们可以给标题做一个选择，不过筛选器里面设置的要是非系统条目。
+
+```
+<<select-field-value "title"  "[!is[system]each[title]get[title]regexp{$:/state/NewTiddlerForm!!name_temp}]">>
+```
+
+当然我们可以主动搜索检查相关条目。具体参考库克马的[[插件|只显示不列出]]。当然两个可以一起使用。
+
+! 标签部分
+
+标签这里要么用上面的方式搞成变量的形式，要么就是常量。无法做到变量和常量同时添加。比如我给一本书录入标签，既要有“book”常量标签，也要有我选择的“社科”这样的变量标签。我没找到可以实现的办法，先放弃。变量添加的方式和其他字段是一样的，这里说一下常量添加。只要在
+
+```
+<$action-createtiddler $basetitle= {{$:/state/NewTiddlerForm!!name_temp}} $overwrite="yes" $template="Input" text={{Input!!text}} tag="常量"> 
+</$action-createtiddler>
+```
+
+里写上`tag="常量"`就可以了。
+
+不过添加标签可以加入筛选器，这样就不会显示所以标签了。显示所有标签的话，就没有选择的功能了。所以选择的只有故事河中有的条目，然后显示标题和标签，并排除系统条目和系统标签。代码就不解释了，能看明白的。
+
+```
+|''tags:''|<<select-field-value "tags"  "[list[$:/StoryList]each[title]get[title]][list[$:/StoryList]each[tags]get[tags]regexp{$:/state/NewTiddlerForm!!tags}!prefix[$:/]]-[is[system]]">>|<$edit-text class='tc-edit-texteditor' tiddler='$:/state/NewTiddlerForm' field='tags' default='' placeholder='tags'/>|
+```
+
+! 时间格式的选择
+
+如果添加的字段是时间，那么可以在edit-text里设置`type="date"`。这样旁边就会出现一个日历一样的按钮，点击就可以选择日期了。
+
+```
+|''完毕时间:''|<<select-field-value "完毕时间" "[each[完毕时间]get[完毕时间]]">>|<$edit-text type="date"   class='tc-edit-texteditor' tiddler='$:/state/NewTiddlerForm' field='完毕时间' default='' placeholder='完毕时间'/>|
+```
+
+! 效果展示
+
+然后用表格包起来，就可以使用了。
+
+[[图书添加]]
+
+[[新建条目]]

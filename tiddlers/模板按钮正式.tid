@@ -1,0 +1,22 @@
+caption: 模板按钮
+created: 20230213152531394
+creator: 马不前
+description: 点击可显示一系列模板
+modified: 20230218143107869
+modifier: 马不前
+tags: $:/tags/ViewToolbar
+title: 模板按钮正式
+tmap.id: 18f1e4be-1aa1-4db7-a8e2-db13f667473d
+type: text/vnd.tiddlywiki
+
+\whitespace trim
+<$set name="popupstate" value=<<qualify "$:/state/popup/demo">> >
+<$button popup=<<popupstate>> popupAbsCoords=yes tooltip="模板按钮" class=<<tv-config-toolbar-class>>>
+<$list filter="[<tv-config-toolbar-icons>match[yes]]">
+{{模板测试||template}}
+</$list>
+<$list filter="[<tv-config-toolbar-text>match[yes]]">
+<span class="tc-btn-text">模板按钮</span>
+</$list>
+</$button>
+</$set>

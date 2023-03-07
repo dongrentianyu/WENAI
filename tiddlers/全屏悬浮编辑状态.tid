@@ -1,0 +1,10 @@
+created: 20230105060207438
+creator: 马不前
+modified: 20230105060302748
+modifier: 马不前
+tags: 
+title: 全屏悬浮编辑状态
+tmap.id: 5cf62fc3-a44a-4341-b6e2-eab5476a0d37
+type: text/vnd.tiddlywiki
+
+类似于[[大图查看]]，但是进入编辑状态才会显示为大图查看的样式。

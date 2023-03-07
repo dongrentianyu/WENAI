@@ -1,0 +1,40 @@
+created: 20230225151426482
+creator: 马不前
+modified: 20230305001940080
+modifier: 马不前
+tags: 
+title: mynewtemplate
+tmap.id: 47fa14b9-5b90-46ec-901b-2cbadede15f0
+type: text/vnd.tiddlywiki
+
+\whitespace trim
+\import [all[shadows+tiddlers]tag[$:/tags/Macro/View/Body]!has[draft.of]]
+<style>
+.parent {
+display: grid;
+grid-template-columns: repeat(5, 1fr);
+grid-template-rows: repeat(3, 1fr);
+grid-column-gap: 20px;
+grid-row-gap: 0px;
+}
+.div1 { grid-area: 1 / 1 / 4 / 2; }
+.div2 { grid-area: 1 / 2 / 4 / 6; }
+</style>
+<div class="parent">
+<div class="div1">
+{{$:/core/ui/SideBar/Open}}
+<$transclude tiddler={{node-explorer-colorful}} field=title mode=block/>
+</div>
+<div class="div2">
+<$reveal tag="div" class="tc-tiddler-body" type="nomatch" stateTitle=<<folded-state>> text="hide" retain="yes" animate="yes">
+
+<$transclude tiddler=<<currentTiddler>> />
+
+<$button
+popup=<<qualify "$:/state/popup/fishingdeck">> tooltip="回到顶端" aria-label="回到顶端" class=<<tv-config-toolbar-class>> selectedClass="tc-selected" style="display: block;margin: auto;width: 40%;">
+<$action-navigate $to=<<currentTiddler>>/>
+{{$:/core/images/up-arrow}}
+</$button>
+</$reveal>
+</div>
+</div>

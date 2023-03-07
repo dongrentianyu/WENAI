@@ -1,0 +1,61 @@
+created: 20230105091938041
+creator: 马不前
+modified: 20230105121914218
+modifier: 马不前
+tags: 
+title: 页面文件
+tmap.id: de85b5c1-0296-4fdb-b380-3b23b54256b0
+type: text/vnd.tiddlywiki
+
+```
+
+!!Step 1 - ''Give the tiddler a name'' 
+
+---
+<$edit-text class='tc-edit-texteditor' tiddler='$:/state/NewTiddlerForm' field='name_temp' placeholder='Tiddler Name'/><br>
+
+!!Step 2 - ''Text field''
+
+---
+
+<$edit-text class='tc-edit-texteditor' tiddler='Input' field='text' placeholder='Tiddler Text'/><br>
+
+
+
+!!Step 3 - ''Fields''
+
+---
+
+account:<<select-field-value "account" "[each[account]get[account]]">>
+
+amount: <$edit-text class='tc-edit-texteditor' tiddler='$:/state/NewTiddlerForm' field='amount' default='' placeholder='amount'/><br>
+
+category:<<select-field-value "category" "[each[category]get[category]]">>
+
+subcategory: <<select-field-value "subcategory" "[each[subcategory]get[subcategory]]">>
+
+input_type: <<select-field-value "input_type" "[each[input_type]get[input_type]]">>
+
+year: <<select-field-value "year" "[each[year]get[year]]">>
+
+month: <<select-field-value "month" "[each[month]get[month]]">>
+
+link: <<select-field-value "link" "[each[link]get[link]]">>
+
+
+!!Step 5 - ''Create the tiddler''
+
+---
+
+
+<$button>
+ <$action-createtiddler $basetitle= {{$:/state/NewTiddlerForm!!name_temp}} $overwrite="yes" $template="Input" text={{Input!!text}} year={{!!year}} month={{!!month}} link={{!!link}} account={{!!account}} amount={{$:/state/NewTiddlerForm!!amount}} category={{!!category}} subcategory={{!!subcategory}}input_type={{!!input_type}}> 
+</$action-createtiddler>
+Create new input
+</$button>
+
+
+<$button>Clear Form
+<$action-setfield $tiddler='$:/state/NewTiddlerForm' name_temp='' text='' account='' amount='' category='' input_type='' year='' month='' link='' />
+
+```

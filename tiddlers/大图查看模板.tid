@@ -1,0 +1,12 @@
+created: 20221212162314972
+creator: 马不前
+modified: 20221212162530011
+modifier: 马不前
+tags: 太微功能条目
+title: 大图查看模板
+tmap.id: a963d5d7-79ff-40ab-b6fd-13e0b9c9bbec
+type: text/vnd.tiddlywiki
+
+<$button message="tm-modal" param="我的创造">我的创造</$button>
+
+只会展示标题和正文，不会展示其他的。

@@ -1,0 +1,25 @@
+created: 20230107132332584
+creator: 马不前
+modified: 20230115151850970
+modifier: 马不前
+tags: 
+title: 表单改进后的宏演示
+tmap.id: f58a7d81-1d5c-4793-ace0-c9764f2a9232
+type: text/vnd.tiddlywiki
+
+''标题：''<<quickforms "$:/state/123" "namewrite"  "[!is[system]list[$:/StoryList]regexp{$:/state/123!!namewrite}]" >>
+
+''标签：''<<quickforms "$:/state/123" "tags"  "[!is[system]list[$:/StoryList]regexp{$:/state/123!!tags}][list[$:/StoryList]regexp{$:/state/123!!tags}]" >>
+
+''author：''<<quickforms "$:/state/123" "author"  "[each[author]get[author]regexp{$:/state/123!!author}]" >>
+
+''一个日期''<$edit-text field="一个日期" tiddler="$:/state/123" type=date tag=input size=40 placeholder="enter value"/>
+
+
+<$button>
+<$action-createtiddler $basetitle= {{$:/state/123!!namewrite}} $overwrite="yes" $template="dsaf" tags={{$:/state/123!!tags}} 一个日期={{$:/state/123!!一个日期}} author={{$:/state/123!!author}}>
+</$action-createtiddler>
+新建条目
+</$button>
+<$button>清除格式
+<$action-setfield $tiddler='$:/state/123' namewrite='' tags='' 一个日期='' author=''/>

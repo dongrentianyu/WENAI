@@ -1,0 +1,16 @@
+created: 20230105091145564
+creator: 马不前
+modified: 20230105123219881
+modifier: 马不前
+tags: $:/tags/Macro
+title: 快速表单字段宏
+tmap.id: 7bffee77-02d8-4645-9f42-0bd9f7d4450c
+type: text/vnd.tiddlywiki
+
+\define select-field-value(fieldname filter:"")
+<$select field="""$fieldname$""" tiddler='$:/state/NewTiddlerForm'>
+<$list filter='$filter$'>
+<option value=<<currentTiddler>>><$view field='title'/></option>
+</$list>
+</$select>
+\end

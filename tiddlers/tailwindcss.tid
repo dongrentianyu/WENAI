@@ -1,0 +1,17 @@
+created: 20230123181214773
+creator: 马不前
+modified: 20230123184439298
+modifier: 马不前
+tags: css相关
+title: tailwindcss
+tmap.id: fcb10988-0635-4213-b3e4-846df9b610eb
+type: text/vnd.tiddlywiki
+
+这个css方式好像比库克马[[用的插件方式|bootstrap]]要好不少。因为不管是简单使用，还是重复使用，样式都更为丰富，值得探索一下。
+
+好像不需要学习太多内容，更像是书写来获取。太记好像已经适配了，反正一下子就看到了效果。比用css方便不少。
+
+* 相关文章
+* [[一次就能看懂的Tailwind CSS介绍|https://juejin.cn/post/7042901516499288077]]
+* [[官方中文文档|https://www.tailwindcss.cn/]]
+* [[使用Tailwind CSS，看这个帖子就够了，使用Tailwind CSS的N个感触|https://learnku.com/laravel/t/53827]]

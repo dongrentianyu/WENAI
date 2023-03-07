@@ -1,0 +1,17 @@
+created: 20230107132148645
+creator: 马不前
+modified: 20230114181200521
+modifier: 马不前
+tags: $:/tags/Macro
+title: 表单创建改进后的宏定义
+tmap.id: 4e254605-1e58-4176-8069-38d718ea064a
+type: text/vnd.tiddlywiki
+
+\define quickforms(statetiddler fieldname filter:"")
+<$select field="""$fieldname$""" tiddler="""$statetiddler$""">
+<$list filter='$filter$'>
+<option value=<<currentTiddler>>><$view field='title'/></option>
+</$list>
+</$select>
+<$edit-text field="""$fieldname$""" tiddler="""$statetiddler$""" tag=input placeholder="enter $fieldname$ value"/>
+\end

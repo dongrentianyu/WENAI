@@ -1,0 +1,22 @@
+created: 20230114153534601
+creator: 马不前
+linkcode: <<linkcode "https://github.com/kookma/TW-Refnotes">>
+linkdemo: <<linkdemo "https://kookma.github.io/TW-Refnotes/" >>
+modified: 20230123174836721
+modifier: 马不前
+tags: 库克马插件 插件介绍
+title: Refnotes参考注释插件
+tmap.id: 348291c2-56a4-43a7-87db-23217e1a0fef
+type: text/vnd.tiddlywiki
+
+<<<
+{{!!linkdemo}}{{!!linkcode}}
+<<<
+
+这是一个参考注释插件。可以实现缩写，引用，脚注等参考注释的内容。
+
+对于复杂的学术写作。如果是在文本内引用，文本量比较大的情况下可以新建一个条目嵌入。文本量比较小的情况下，那么可以使用[[HSL插件]]来嵌入部分文本。不过这个插件需要开启行号，然后把模式调整到黑暗。
+
+在做读书笔记摘录时，可以建一个条目，里面放摘录的文本，以及对应页数。如果有的话。或者愿意记录的话。
+
+本来想写一个例子来演示的，发现不知道怎么写。因为没有这个情况出现，只有当我遇到了这样的情况才会用到。

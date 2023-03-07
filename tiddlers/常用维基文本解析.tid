@@ -1,0 +1,117 @@
+created: 20220727162805624
+creator: 马不前
+modified: 20230124180557768
+modifier: 马不前
+tags: 太微使用小技巧
+title: 常用维基文本解析
+tmap.id: 1b6290ba-1d94-42db-8a05-131da876a4da
+type: text/vnd.tiddlywiki
+
+<style> 
+.yinyu{background-color:blue;}
+</style>
+
+<<<.tc-big-quote
+A dramatic quote
+<<< Somebody Important
+
+<!--eiu-->
+
+```
+<!--eiu-->
+```
+这是大号引言符号。下面是代码。
+
+```
+<<<.tc-big-quote
+A dramatic quote
+<<< Somebody Important
+```
+
+
+<<<.yinyu
+Operating systems are like a brick wall for our minds
+<<<
+
+;定义
+:描述定义的地方。
+
+```
+;定义
+:描述定义的地方。
+```
+
+"""
+This is a line
+and this is a new line
+while this is yet another line
+and this is the final one
+apart from this one
+"""
+
+上面是单个换行符号表达。
+
+```
+"""
+This is a line
+and this is a new line
+while this is yet another line
+and this is the final one
+apart from this one
+"""
+```
+
+---
+分隔线
+
+代码比较简单就不放了。
+
+#.yiny 一月
+
+上面案例的意思是可以在列表里面设置css。
+
+$$$.svg
+<svg xmlns="http://www.w3.org/2000/svg" width="150" height="100">
+  <circle cx="100" cy="50" r="40" stroke="black" stroke-width="2" fill="red" />
+</svg>
+$$$
+
+
+```
+$$$.svg
+<svg xmlns="http://www.w3.org/2000/svg" width="150" height="100">
+  <circle cx="100" cy="50" r="40" stroke="black" stroke-width="2" fill="red" />
+</svg>
+$$$
+```
+上面的代码是说可以直接引用什么文章。我也不太清楚。
+
+~https://docs.qq.com/doc/DQmNHUHdPS3VYZ012?=undefined&_t=1657838401294&u=fa34ae384b734836b20773c4fa70288b
+
+网站前面加上一个“~”可以避免被识别为驼峰链接，意思就是不能够直接跳转到网站。
+
+<$list filter="[tag[书籍]sort[title]]">
+	<div><$text text=<<currentTiddler>>/></div>
+</$list>
+
+更方便或者更常用的是以下的代码。
+
+<$list filter="[tag[书籍]sort[title]]"/>
+
+```
+<$list filter="[tag[书籍]sort[title]]"/>
+```
+
+这是上面图片引用的代码。因为引用文件过大而比较麻烦。
+
+```
+<$list filter="[tag<currentTiddler>]">
+
+!!! <$link><<currentTiddler>></$link>
+
+ {{!!text}}
+
+</$list>
+```
+
+上面分别是案例和代码。

@@ -1,0 +1,29 @@
+caption: {{$:/images/bootstrap/node-plus}} 添加前缀按钮
+created: 20230206195721754
+creator: 马不前
+description: 方便新建条目后直接添加前缀
+modified: 20230209081801354
+modifier: 马不前
+tags: $:/tags/ViewToolbar 自定制的太微
+title: 添加前缀按钮
+tmap.id: 61b1f52d-3e47-4771-a8aa-0496ac2f5726
+type: text/vnd.tiddlywiki
+
+\define testCreate()
+\whitespace trim
+<$action-createtiddler $basetitle=<<currentTiddler>> >
+	<$action-sendmessage $message="tm-edit-tiddler" $param=<<createTiddler-title>>/>
+</$action-createtiddler>
+\end 
+\whitespace trim
+<$button actions=<<testCreate>> 
+popup=<<qualify "$:/state/popup/fishingdeck">>
+    tooltip="添加前缀按钮"
+    aria-label="添加前缀按钮"
+    class=<<tv-config-toolbar-class>>
+    selectedClass="tc-selected">
+<$action-setfield $tiddler="$:/state/tab/sidebar--5954128561" text="$:/core/ui/SideBar/Recent"/>
+<$list filter="[<tv-config-toolbar-icons>match[yes]]">
+{{$:/images/bootstrap/node-plus}}</$list>
+<$list filter="[<tv-config-toolbar-text>match[yes]]"><span class="tc-btn-text">添加前缀按钮</span></$list>
+</$button> 

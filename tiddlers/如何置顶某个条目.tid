@@ -1,0 +1,10 @@
+created: 20230221114525750
+creator: 马不前
+modified: 20230221114607455
+modifier: 马不前
+tags: 太微官方文档
+title: 如何置顶某个条目
+tmap.id: 3c90aab3-d0ba-4000-9b0c-0f1dcf6abf1f
+type: text/vnd.tiddlywiki
+
+添加`$:/tags/AboveStory`标签就可以了。

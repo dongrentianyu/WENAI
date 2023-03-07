@@ -1,0 +1,37 @@
+created: 20230213153404941
+creator: 马不前
+modified: 20230213153500025
+modifier: 马不前
+tags: 
+title: 研究清楚文本格式
+tmap.id: c88be12d-d445-4bcf-b0f7-328f24fa63e8
+type: text/vnd.tiddlywiki
+
+
+```
+var rsalb = {
+  format_str: function (s) {
+    // 清除换行符
+    let str_d= s.replace(/[\r\n]/g, "");
+    // 清除空格
+    let str_s = str_d.replace(/\ +/g, "");
+    return str_s;
+  },
+};
+
+
+exports.rsalb = rsalb;
+
+// 使用 var name = require（这个文件）
+// name.format_str(要格式化的字符串)，调用这个方法将返回一个没有换行符与空格的字符串文本
+
+```
+
+```
+条目栏位：
+module-type:	library
+类型：application/javascript
+
+```
+
+https://bramchen.github.io/tw5-docs/zh-Hans/#ModuleType

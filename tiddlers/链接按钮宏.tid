@@ -1,0 +1,12 @@
+created: 20230103113112154
+creator: 马不前
+modified: 20230207125206411
+modifier: 马不前
+tags: $:/tags/Macro 自定制的太微
+title: 链接按钮宏
+tmap.id: 24e12da6-9c33-4a39-ad98-757984899d3c
+type: text/vnd.tiddlywiki
+
+\define linkcss(text,link,style)
+<a href=<<__link__>> class="tc-btn-big-green" style="$style$" target="_blank" rel="noopener noreferrer"><$text text=<<__text__>>/></a>
+\end

@@ -1,0 +1,88 @@
+created: 20221231180258228
+creator: 马不前
+linkcode: <<linkcode "https://github.com/tiddly-gittly/Modern.TiddlyDev" >>
+linkdemo: <<linkdemo "https://tiddly-gittly.github.io/Modern.TiddlyDev/" >>
+modified: 20230114144309456
+modifier: 马不前
+tags: 插件介绍
+title: Modern.TiddlyDev
+tmap.id: af0c5c9d-71b7-4b7f-9562-d7a3627f8f77
+type: text/vnd.tiddlywiki
+
+<<<
+{{!!linkdemo}} {{!!linkcode}}
+<<<
+
+有重大更新。初始方式变了。后续变化也会写在这里。
+
+首先找一个适合的文件夹路径。在上面用写cmd回车打开当前路径终端。
+
+然后在后面输入命令`npx tiddlywiki-plugin-dev@latest init $---$`。
+
+`$$`之间的字符串是新建本地仓库名称，用英文和和数字组合即可。然后就是回车等待，可能会因为网络问题或者vpn而炸掉，多试几次就行了。
+
+中间会遇到选择安装npm包，点回车或者y就可以继续下去。下载过程需要一分钟左右。
+
+下载好了，就可以关掉当前路径的终端。
+
+然后直接用github desktop打开这个本地仓库，然后推送过去，就完成了在github上新建仓库。
+
+或者也可以采用git命令行的方式。转而打开新建本地仓库的终端。打开方法和上面一样，直接在路径栏写cmd并回车即可。
+
+在到github上新建一个纯空的仓库，除了标题和描述和公开与否有内容外，其他的都不要勾选。然后新建后会看到下面有不同的命令。在最上面选择http，然后分别复制中间部分的三条命令回车实现。
+
+整个过程没有出现红色报错就说明基本上成功了。
+
+回到github仓库上刷新一下，可以看到会有三个文件夹和一些文件。
+
+''说明：'' 为什么会和本地仓库文件夹不是一样的呢？
+
+因为这两个就是不应当加载进去的。node_modules和.husky是在npm install后自动生成，且在不同的电脑上不太一样。所以正确的做法就是忽略这两个文件夹，如果别人clone了你的项目，就需要npm install。如果包括了node_mudules，不仅会让你的项目变得很大（百兆起步），而且别人可能还运行不起来反而报错。
+
+
+<<<
+简言之，有两个文件夹没有加载过去，是因为不需要加载过去。
+<<<
+
+然后需要设置actions，把里面的general，最下面的读写状态修改为允许读写。然后就可以运行actions了。如果没有及时修改，会出现报错。出现报错后，需要实行上面的操作，然后重新re-runs all jobs。和太记部署网页的方式是一样的。
+
+最后可以用太记编辑，也可以用vs code编辑器编辑，也可以用浏览器的方式编辑。然后同步。可以使用命令，也可以用github desktop。
+
+
+''一定要等actions部署成功后才去点pages的branch。只有点gh-pages分支才能正确部署，点成其他分支了是无法部署的。''
+
+
+
+
+
+
+---
+
+我尝试了一下，没搞清楚如何操作的。可能我不太会用git命令行。
+
+指令把模板切换到main或者master
+
+用init指令创建项目，在github创建纯空仓库。
+
+按给的三条指令，remote和push
+
+actions权限换成读写
+
+
+首先，要分成两部分。
+
+一部分是开发的，一部分是普通用户用来发布。
+
+太记发布出现了问题。
+
+使用morder插件发布。
+
+第一步在本地建一个仓库 通过init命令
+
+检查一下，分支切换到main或者master
+
+用桌面版本或者直接在github建一个纯空仓库
+
+检查actions读写状态
+
+发布网页

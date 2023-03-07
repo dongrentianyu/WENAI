@@ -1,0 +1,28 @@
+created: 20230105093511115
+creator: 马不前
+modified: 20230105125124995
+modifier: 马不前
+tags: 快速表单
+title: button部分
+tmap.id: 24694431-8ab8-4929-b558-8a41ea7ccdbf
+type: text/vnd.tiddlywiki
+
+[[action-createtiddler|https://bramchen.github.io/tw5-docs/zh-Hans/#ActionCreateTiddlerWidget]]是创建条目的微件，同样需要学习。
+
+```
+$basetitle= {{$:/state/NewTiddlerForm!!name_temp}}
+```
+
+原文件里这句话的意思是新建条目的标题采用`{{$:/state/NewTiddlerForm!!name_temp}}`的内容。
+
+`$:/state/NewTiddlerForm`，这是之前的状态条目，然后用两个英文感叹号，表示显示后面的字段内容。
+
+因此当我们新建条目时，就会用到这个标题了。
+
+其他字段也是类似用了一样的用法。`month={{!!month}}`是`month={{$:/state/NewTiddlerForm!!month}}`的省略写法。具体可参看太微中文社区的[[相关内容|https://tiddly-wiki-chinese-tutorial.vercel.app/#%E5%9C%A8%E7%AD%9B%E9%80%89%E5%99%A8%E4%B8%AD%E4%BD%BF%E7%94%A8%E5%AE%8F%E6%88%96%E5%8F%98%E9%87%8F]]。
+
+[[action-setfield|https://bramchen.github.io/tw5-docs/zh-Hans/#ActionSetFieldWidget]]是给某个字段设定一个值。如果原来有值，则原来的值会被覆盖。这是简单理解，具体还是要去看文档。这个动作里列出的字段内容会消失，变成空格。以达到我们清除格式的目的。
+
+一个宏只能限定一个状态条目。`$:/state/NewTiddlerForm`因此如果要有多个不同状态条目，就需要有两个宏。这样才能保持前后一致。
+
+如果既要做一个图书输入器，又要做一个平时使用的任务输入器，最好选择不同的状态条目。因为两个状态条目是一样的话，那么在这里编辑的效果会带到另一个编辑里去。不过平时使用来说，不太会有这种情况。不过以防万一，还是搞两个不同的状态条目。状态条目是可以修改的，但需要保持前后的一致。不然无法生效。

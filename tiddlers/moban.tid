@@ -1,0 +1,23 @@
+created: 20230209105806782
+creator: 马不前
+modified: 20230209105823687
+modifier: 马不前
+tags: 
+title: moban
+tmap.id: 5913cd5b-0987-4656-82c8-327ab941eee8
+type: text/vnd.tiddlywiki
+
+<$set name="popupstate" value=<<qualify "$:/state/popup/showtid">> >
+<div class="tc-word-break">
+<$button popup=<<popupstate>> class="tc-btn-invisible">{{$:/xp/images/click-popup}}<i class="tc-tiny-gap-left"/><$link to=<<currentTiddler>>><$view field="title"/></$link></$button>
+</div>
+<$reveal type="popup" state=<<popupstate>> position="below" updatePopupPosition="yes" class="tc-popup-keep" retain="yes" style="overflow-y:hidden;">
+<div class="tc-drop-down-wrapper">
+<div class="xp-popup tc-popup-keep" style="max-width:680px;overflow-y:hidden;">
+<div class="xp-popup-text">
+<$transclude mode="block"/>
+</div>
+</div>
+</div>
+</$reveal>
+</$set>

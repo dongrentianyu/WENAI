@@ -1,0 +1,22 @@
+created: 20220803162328340
+creator: 马不前
+modified: 20230305002030873
+modifier: 马不前
+tags: 太微答疑（已解决的）
+title: 编辑定位不准的问题
+tmap.id: e82bc46d-f62f-409a-85fe-5adc43fbe977
+type: text/vnd.tiddlywiki
+
+<div class="left-column-border">
+
+为什么在编辑的时候会出现白色滚动条，导致光标定位不准和不能定位？
+
+</div>
+
+<div class="right-column-border">
+
+我直观上感觉是codemirror的css被影响了，导致光标定位错误。
+
+目前解决办法就是退出全屏，然后编辑的下面把空格删除，再刷新一下，基本上可以消除了
+
+</div>

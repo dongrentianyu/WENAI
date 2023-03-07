@@ -1,0 +1,28 @@
+created: 20230113110011941
+creator: 马不前
+linkcode: <<linkcode "https://github.com/kookma/TW-Shiraz" >>
+linkdemo: <<linkdemo "https://kookma.github.io/TW-Shiraz/" >>
+modified: 20230206171203841
+modifier: 马不前
+tags: 库克马插件 插件介绍 本站已装插件
+title: Shiraz系列插件
+tmap.id: d43ad8f1-8828-49e3-a3da-55826de0b268
+type: text/vnd.tiddlywiki
+
+<<<
+{{!!linkdemo}}{{!!linkcode}}
+<<<
+
+
+这是一个前端插件，里面有很多样式，也有很多操作。比如[[节点丸]]就是从里面提取出来的。新手可以认真看一看。可以把你的wiki配置得很漂亮。
+
+同时提供两个子插件。一个提供在编辑状态时显示各种不同的颜色。比如背景颜色，文本颜色等，很快捷。另一个提供更多样式选择。包含了一些新的图标。两者的code跟上面是一样的。
+
+
+<<<
+''格式化子插件''<<linkdemo "https://kookma.github.io/TW-Shiraz/shiraz-formatter.html" >>
+<<<
+
+<<<
+''标注子插件''<<linkdemo "https://kookma.github.io/TW-Shiraz/shiraz-callout.html" >>
+<<<

@@ -1,0 +1,19 @@
+created: 20220912001737261
+modified: 20230305002030876
+modifier: 马不前
+tags: 太微答疑（已解决的）
+title: 时间戳
+tmap.id: 5bf1f68f-8b34-45ac-bda5-c6432dc9831c
+type: text/vnd.tiddlywiki
+
+<div class="left-column-border">
+
+*貌似从文本里剪切出来的新条目,没有创建时间和修改时间,这就尴尬了啊,如果排序是按创建时间来的话,有些笔记就排序不了了
+
+</div>
+
+<div class="right-column-border">
+
+出现这种问题一般是把时间戳关掉了,点更多操作找到时间戳,打开就可以看到了.旧的笔记不会增加,新建的笔记就会有了
+
+</div>

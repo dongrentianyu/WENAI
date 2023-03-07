@@ -1,0 +1,45 @@
+created: 20221213121234072
+creator: 马不前
+modified: 20221213122529505
+modifier: 马不前
+order: 2
+tags: 官方插件
+title: tiddlywiki探索插件
+tmap.id: aabd01d2-e6c2-4a58-9272-c9824e93ed67
+type: text/vnd.tiddlywiki
+
+! tiddlywiki探索插件
+;tiddlywiki/internals
+:用于探索TiddlyWiki内部的工具.
+;tiddlywiki/tw5.com-docs
+:来自tiddlywiki.com的文档
+;tiddlywiki/twitter
+:Twitter嵌入工具
+;tiddlywiki/savetrail
+:自动下载修改过的tiddlers，并保存为JSON。
+;tiddlywiki/help
+:浮动的帮助面板，这个插件在窗口的右下方提供了一个覆盖式帮助面板。
+;tiddlywiki/github-fork-ribbon
+:这个插件提供了一个横跨窗口角落的对角线丝带。它类似于GitHub的 "Fork me on GitHub "色带的设计。
+;tiddlywiki/stacked-view
+:堆叠卡片故事视图，这个插件提供了一个新的故事可视化，以一叠卡片的形式显示各个花絮。它目前是实验性的，不完整的。
+;tiddlywiki/dynaview
+:动态滚动和缩放效果，这个插件使得建立用户界面成为可能，它可以通过滚动或缩放动态地响应浏览器视口的变化。
+;tiddlywiki/freelinks
+:这个插件增加了自动生成链接到tiddler标题的功能。请注意，当有大量的tiddlers时，自动生成链接的速度会非常慢。
+;tiddlywiki/consent-banner
+:用于GDPR等的同意书横幅，它会显示一个横幅，邀请用户接受或拒绝cookie，并在本地存储中跟踪他们的同意，以便在后续访问时隐藏该横幅。
+;tiddlywiki/powered-by-tiddlywiki
+:这个插件添加了一个 "Powered by TiddlyWiki "的横幅，链接到https://tiddlywiki.com。目前它非常基本，但我们计划通过使它更容易定制来改进它。
+;tiddlywiki/classictools
+:TiddlyWiki经典工具，这个插件提供了与TiddlyWiki Classic一起工作的设施。它被用于TiddlyWiki Classic的构建过程。它的附加功能有，一个用于读取TiddlyWiki Classic .recipe文件的tiddlerdeserializer模块。用于构建TiddlyWiki Classic的模板。更多细节见https://github.com/TiddlyWiki/tiddlywiki.com。
+;tiddlywiki/text-slicer
+:将文本切成片段的工具，依赖于tiddlywiki/sax插件。这个插件包含一些工具，帮助将长文本切成单独的小块。它目前可以直接处理XHTML文档，并通过转换为HTML处理与Microsoft Word兼容的DOCX文档。
+;tiddlywiki/xlsx-utils
+:XLSX电子表格实用工具，依赖插件tiddlywiki/jszip。这个插件提供了一种灵活的方式来从Excel文件中导入tiddlers。它基于js-xlsx库。
+;tiddlywiki/innerwiki
+:截图和测试的内部维基，总的来说是在wiki中嵌入wiki（这个wiki称之为innerwikis）。在浏览器中，innerwikis是以嵌入式iframe的形式显示。在Node.js中，谷歌的Puppeteer被用来将innerwikis加载为屏幕外的网页，然后将其快照为PNG图像。
+;tiddlywiki/cecily
+:可缩放的故事视图（塞西莉），这个实验性的插件提供了一个新的故事可视化，在一个无限的画布上以可调整大小的瓷砖形式显示单个的Tiddlers。Cecily是基于TiddlyWiki Classic的一个早期插件：http://jermolene.com/cecily。Cecily目前处于开发的早期阶段，还没有实现什么功能。
+;tiddlywiki/share
+:通过URL共享tiddlers。这个实验性插件提供了通过URL共享tiddlers的工具，包括：在启动时从浏览器位置哈希中加载一组提示符的能力，用向导和模板从一组提示符中创建URLs

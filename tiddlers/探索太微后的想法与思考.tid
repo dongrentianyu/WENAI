@@ -1,0 +1,12 @@
+created: 20230124175552111
+creator: 马不前
+modified: 20230124182448661
+modifier: 马不前
+tags: 太微使用笔记
+title: 探索太微后的想法与思考
+tmap.id: 6bf4967e-c76d-461e-bb95-8cbcee091425
+type: text/vnd.tiddlywiki
+
+强大的太微，更在于使用。我在使用太微中，经常会有很多新奇的想法涌现出来。
+
+<$macrocall $name="locator-view" baseTitle=<<currentTiddler>> />

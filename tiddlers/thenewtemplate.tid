@@ -1,0 +1,11 @@
+code-body: yes
+created: 20230225153453759
+creator: 马不前
+modified: 20230302084433172
+modifier: 马不前
+tags: $:/tags/ViewTemplateBodyFilter
+title: thenewtemplate
+tmap.id: dccc3cf4-72f3-4ee7-b894-3ef7d9964bf0
+type: text/vnd.tiddlywiki
+
+[all[current]!is[system]!is[shadow]!tag[$:/tags/SideBar]!tag[$:/tags/ViewTemplate]!tag[$:/tags/Stylesheet]!tag[?]then[mynewtemplate]]

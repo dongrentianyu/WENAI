@@ -1,0 +1,25 @@
+created: 20230105111831662
+creator: 马不前
+modified: 20230105112705980
+modifier: 马不前
+title: 只显示不列出
+tmap.id: a4d3483e-7351-4688-92c4-7966eab0170f
+type: text/vnd.tiddlywiki
+
+当我们使用设拉子插件时，会看到里面有一个列出和搜索。写上筛选器就可以搜索并显示具体条目。比如下面就是显示TableOfContents的内容。
+
+```
+<<list-search filter:"[!is[system]tag[TableOfContents]limit[10]]" class:"alert alert-info" stateTiddler:"exmp2">>
+```
+
+<<list-search filter:"[!is[system]tag[TableOfContents]limit[10]]" class:"alert alert-info" stateTiddler:"exmp2">>
+
+如果你输入“开”，就会只显示一条内容“开幕式”。但不输入就会显示全部显示了。所以我想能不能修改一下，只有在搜索时才会显示内容，不输入就不会显示内容。
+
+我在库克马的基础上修改实现了这个需求。[[相应条目|$:/plugins/kookma/shiraz/macros/list-searchx]]，具体来说就是删去了里面自动显示的代码。然后加上x作为区分。
+
+可以看看效果。
+
+<<list-searchx filter:"[!is[system]tag[TableOfContents]limit[10]]" class:"alert alert-info" stateTiddler:"exmp2">>
+
+不输入内容就不会显示，输入内容就会像上面一样显示对应条目。

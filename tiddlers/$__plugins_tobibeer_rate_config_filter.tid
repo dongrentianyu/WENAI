@@ -1,0 +1,8 @@
+created: 20230206165634996
+creator: 马不前
+modified: 20230206165634996
+modifier: 马不前
+title: $:/plugins/tobibeer/rate/config/filter
+type: text/vnd.tiddlywiki
+
+[all[current]is[tiddler]!is[system]]

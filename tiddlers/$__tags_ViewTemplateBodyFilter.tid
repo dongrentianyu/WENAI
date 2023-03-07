@@ -1,0 +1,7 @@
+created: 20230225170256614
+creator: 马不前
+list: $:/config/ViewTemplateBodyFilters/hide-body $:/config/ViewTemplateBodyFilters/code-body $:/config/ViewTemplateBodyFilters/stylesheet thenewtemplate $:/config/gatha/ViewTemplateBodyFilters/PluginMetaData $:/plugins/linonetwo/tw-mobile-sync/ui/ServerItemViewTemplateCascade $:/plugins/linonetwo/tw-whiteboard/tiddlywiki-ui/ViewTemplate/body/view-whiteboard-cascade-filter $:/config/ViewTemplateBodyFilters/system $:/config/ViewTemplateBodyFilters/import $:/config/ViewTemplateBodyFilters/plugin $:/config/ViewTemplateBodyFilters/default
+modified: 20230225170256614
+modifier: 马不前
+title: $:/tags/ViewTemplateBodyFilter
+type: text/vnd.tiddlywiki

@@ -1,0 +1,20 @@
+created: 20230114141319471
+creator: 马不前
+modified: 20230204171403033
+modifier: 马不前
+tags: 
+title: 浏览器的缓存机制
+tmap.id: 30a7a9f0-0ce0-4bd0-b33b-67e0e1cb8e67
+type: text/vnd.tiddlywiki
+
+差点找不回域名
+
+https://dongrentianyu.github.io/WENAI/
+
+准确来说是WENAI这个名称，对我有特殊的意义。或者说我赋予这个名称特殊的意义。
+
+这次好在有[[Sttot(Gk0Wk)]]的帮助，不然差点要换域名了。
+
+出错的问题在于edge浏览器的缓存机制。具体可以去搜索“edge浏览器如何清除具体域名缓存内容”，具体来说，就是在打开开发者工具后，点击应用程序，找到本地缓存，然后清除刷新，就可以看到效果了。
+
+[[Edge清除指定网站缓存|https://blog.csdn.net/qq_50869885/article/details/125462224]]

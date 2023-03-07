@@ -1,0 +1,19 @@
+created: 20230113110900339
+creator: 马不前
+linkcode: <<linkcode "https://github.com/kookma/TW-Utility">>
+linkdemo: <<linkdemo "https://kookma.github.io/TW-Utility/">>
+modified: 20230206171136009
+modifier: 马不前
+tags: 库克马插件 插件介绍 本站已装插件
+title: Utility实用工具插件
+tmap.id: fb1499e9-83ce-40aa-b502-372193b05326
+type: text/vnd.tiddlywiki
+
+<<<
+{{!!linkdemo}}{{!!linkcode}}
+<<<
+
+这也是一个常用的插件。比如写教程时，需要写一段代码方便别人直接复制，就可以用盖章里的code，然后把代码放进去。如果代码很多可以用条目嵌入进去。
+
+另一个比如要显示宏，要显示一个条目的特定字段内容，也可以从里面找到。
+

@@ -1,0 +1,18 @@
+created: 20221212145749315
+creator: 马不前
+modified: 20230206215431942
+modifier: 马不前
+tags: 
+title: 节点丸颜色
+tmap.id: b3fec1eb-83b1-44e1-a74f-f491e841cba8
+type: text/vnd.tiddlywiki
+
+!!! 节点丸颜色表示:
+* <<badge info "链接">>
+* <<badge danger "反向链接">>
+* <<badge success "此标签">>
+* <<badge warning "标签了">>
+* <<badge primary "前缀">>
+* <<badge secondary "反向嵌入">>
+* <<badge dark "嵌入">>
+[[说明|节点丸说明]]

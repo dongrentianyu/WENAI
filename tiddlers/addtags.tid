@@ -1,0 +1,14 @@
+created: 20230115153219710
+creator: 马不前
+modified: 20230116122859697
+modifier: 马不前
+tags: quick-add-tags
+title: addtags
+tmap.id: 573da8be-ef9d-48a8-8d7f-139f7af44732
+type: text/vnd.tiddlywiki
+
+<$edit-text field=tags  tag=input placeholder="enter tags value"/><$select field=tags size="5">
+<$list filter='[list[$:/StoryList]regexp{$:/state/at!!tags}][list[$:/StoryList]regexp{$:/state/at!!tags}]-[prefix[$:/]]-[prefix[Draft]]'>
+<option value=<<currentTiddler>>><$view field='title'/></option>
+</$list>
+</$select>

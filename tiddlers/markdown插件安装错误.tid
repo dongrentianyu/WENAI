@@ -1,0 +1,10 @@
+created: 20220726161858219
+creator: 马不前
+modified: 20220922043913419
+modifier: 马不前
+tags: 错误案例
+title: markdown插件安装错误
+tmap.id: 6237a514-209e-47db-8132-ad9d875b2469
+type: text/vnd.tiddlywiki
+
+问题已解决，我太蠢了。首先是要在官方插件库里安装markdown，描述是这样的“Markdown: Markdown parser based on remarkable by Jon Schlinkert and remarkable-katex by Brad Howes”，然后再安装从cpl插件库里安装转换插件，描述是这样的“markdown-export 导出Markdown: Export tiddlers to Markdown.”。接着刷新一下就可以了。真是太蠢了，没有注意到这些小问题。抱歉打扰到大家了。深感歉意。
