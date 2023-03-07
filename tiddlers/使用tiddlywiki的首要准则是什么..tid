@@ -2,6 +2,17 @@ IsOtherText: yes
 caption: {{||Question}}
 created: 20230219011900943
 creator: 马不前
+difficulty: 5
+due: 20230309032604971
+grade: -1
+history: []
+interval: 0
+lapses: 0
+modified: 20230307032604971
+reps: 1
+retrievability: 1
+review: 20230307032604971
+stability: 2
 tags: ?
 title: 使用tiddlywiki的首要准则是什么.
 tmap.id: 06e743c6-41af-4adb-87e0-cfbf48d546a2

@@ -1,0 +1,8 @@
+created: 20230307031900532
+modified: 20230307032007523
+tags: 
+title: 一个不是教训的教训
+tmap.id: cb3651e4-7cb7-4b2f-bfed-06a37a028a8e
+type: text/vnd.tiddlywiki
+
+我也不清楚是不是教训，就是如果本地git备份了的话，如果有github远程仓库，最好是也同步过去。如果反复修改这几个文件最后还没有github同步，可能就会出现问题。
