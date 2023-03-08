@@ -1,0 +1,8 @@
+created: 20230308141230649
+modified: 20230308141343721
+tags: 
+title: 添加某个条目放在故事河的底部
+tmap.id: 02b69397-ad7a-45c7-b317-3de55598eb95
+type: text/vnd.tiddlywiki
+
+只需要给特定条目加上标签`$:/tags/BelowStory`就可以了。类似的还有置顶条目也是加上标签`$:/tags/AboveStory`。
