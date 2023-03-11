@@ -1,6 +1,6 @@
 created: 20230225164505159
 creator: 马不前
-modified: 20230305001830958
+modified: 20230311084358723
 modifier: 马不前
 tags: 
 title: 个人定制版本上线
@@ -15,8 +15,8 @@ type: text/vnd.tiddlywiki
 
 条目旁边的打开列表和下面的节点丸，以及正文内容下面的箭头，都是自动生成的，也可以在级联的查看模板主体里调整。这些都是方便全屏时编辑或者查看。基本上不需要用到侧边栏的内容了。而且在移动端上的效果也还可以接受。[[关于级联|级联]]
 
-demo:https://tiddly-gittly.github.io/templatewiki/
+demo:https://dongrentianyu.github.io/mabuqian/
 
-code:https://github.com/tiddly-gittly/templatewiki
+code:https://github.com/dongrentianyu/mabuqian
 
 推荐从上面的仓库里下载，一来更新及时，二来下载后可直接用太记打开更方便。
