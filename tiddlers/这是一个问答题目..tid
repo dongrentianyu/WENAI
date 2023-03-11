@@ -1,0 +1,21 @@
+IsOtherText: yes
+caption: 这是一个问答题目
+created: 20230311210555759
+creator: 马不前
+difficulty: 5
+due: 20230313130641941
+grade: -1
+history: []
+interval: 0
+lapses: 0
+modified: 20230311130710623
+reps: 1
+retrievability: 1
+review: 20230311130641941
+stability: 2
+tags: 只是测试 ?
+title: 这是一个问答题目.
+tmap.id: 2b715388-9416-411d-aafa-0176a3534a97
+type: text/vnd.tiddlywiki
+
+这是问答题的答案

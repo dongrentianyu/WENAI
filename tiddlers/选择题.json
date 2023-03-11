@@ -1,0 +1,24 @@
+[
+    {
+        "created": "20230311215029748",
+        "title": "选择题",
+        "creator": "马不前",
+        "tags": "只是选择题 ?",
+        "text": " ",
+        "modified": "20230311135115586",
+        "type": "text/vnd.tiddlywiki",
+        "caption": "选择题<<?s \"\"\"\n1\n2\n3\n4\n\"\"\"ABC>>",
+        "IsOtherText": "yes",
+        "tmap.id": "47a49077-4fc4-4cbb-be64-a7bc14372643",
+        "due": "20230313135115586",
+        "interval": "0",
+        "difficulty": "5",
+        "stability": "2",
+        "retrievability": "1",
+        "lapses": "0",
+        "reps": "1",
+        "grade": "-1",
+        "review": "20230311135115586",
+        "history": "[]"
+    }
+]

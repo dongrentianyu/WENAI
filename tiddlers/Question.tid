@@ -1,0 +1,67 @@
+code-body: yes
+tags: $:/tags/QuestionTemplate
+title: Question
+tmap.id: 7cd79374-d286-422f-9336-778d00179632
+type: text/vnd.tiddlywiki
+
+<div
+    class="tc-tiddler-body"
+>
+    {{!!title}}
+    <$edit
+        tiddler="$:/temp/fishing"
+        placeholder={{$:/language/EditTemplate/Body/Placeholder}}
+        minHeight="15px"
+        class="tc-edit-texteditor tc-edit-texteditor-body"
+    >
+        <$set
+            value=<<currentTiddler>>
+            name="targetTiddler"
+        >
+            <$list
+                filter="[all[shadows+tiddlers]tag[$:/tags/EditorToolbar]!is[draft]]"
+            >
+                <$reveal
+                    type="nomatch"
+                    state=<<config-visibility-title>>
+                    text="hide"
+                    class="tc-text-editor-toolbar-item-wrapper"
+                    style="display: none;"
+                >
+                    <$transclude
+                        tiddler="$:/core/ui/EditTemplate/body/toolbar/button"
+                        mode="inline"
+                    />
+                </$reveal>
+            </$list>
+            <$list
+                filter="[all[shadows+tiddlers]tag[$:/tags/EditorTools]!is[draft]]"
+            >
+                <$list
+                    filter={{!!condition}}
+                    variable="list-condition"
+                >
+                    <$transclude/>
+                </$list>
+            </$list>
+        </$set>
+    </$edit>
+    <$reveal
+        default={{$:/temp/fishing}}
+        type="nomatch"
+        text=""
+        animate="yes"
+    >
+        <$reveal
+            state=<<folded-state>>
+            type="match"
+            text="show"
+            animate="yes"
+        >
+            <$diff-text
+                source={{$:/temp/fishing}}
+                dest={{!!text}}
+            />
+        </$reveal>
+    </$reveal>
+</div>
