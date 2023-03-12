@@ -1,6 +1,6 @@
 created: 20230123181214773
 creator: 马不前
-modified: 20230123184439298
+modified: 20230312043054281
 modifier: 马不前
 tags: css相关
 title: tailwindcss
@@ -11,7 +11,9 @@ type: text/vnd.tiddlywiki
 
 好像不需要学习太多内容，更像是书写来获取。太记好像已经适配了，反正一下子就看到了效果。比用css方便不少。
 
-* 相关文章
+
+''相关文章''
+
 * [[一次就能看懂的Tailwind CSS介绍|https://juejin.cn/post/7042901516499288077]]
 * [[官方中文文档|https://www.tailwindcss.cn/]]
 * [[使用Tailwind CSS，看这个帖子就够了，使用Tailwind CSS的N个感触|https://learnku.com/laravel/t/53827]]
