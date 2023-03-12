@@ -2,7 +2,18 @@ IsOtherText: yes
 caption: <<?c 填空>>题
 created: 20230311215119886
 creator: 马不前
-modified: 20230311135402896
+difficulty: 5
+due: 20230314140449701
+grade: -1
+history: []
+interval: 0
+lapses: 0
+modified: 20230312140449701
+modifier: 马不前
+reps: 1
+retrievability: 1
+review: 20230312140449701
+stability: 2
 tags: ?
 title: 填空题.
 tmap.id: ba2a46de-80f2-402d-b556-deb85ce9d96c
