@@ -1,0 +1,30 @@
+created: 20230313064947657
+creator: 马不前
+modified: 20230313065830981
+modifier: 马不前
+tags: 开始学习rust编程
+title: rust搭建环境
+tmap.id: cc72768a-1728-48ec-93d3-1021cdeacce5
+type: text/vnd.tiddlywiki
+
+传说新手学习编程第一步，搭建环境。然后就放弃了。
+
+我也遇到这样的情况。我先是去看所谓的rust圣经[[安装环境|https://course.rs/first-try/installation.html]]，但圣经里面没有写更多的细节。
+
+我把我的配置过程记录下来。首先是需要自己添加变量环境，但后面我又删除了，不清楚有没有影响，反正如果需要安装环境变量，可以参考[[这篇文章|https://blog.csdn.net/weixin_37204973/article/details/82504570]]。
+
+最重要的是，不要直接双击运行rustup-init.exe文件，''而是在命令行中运行''，也就是在上面文件的位置中命令行中运行。
+
+然后直接回车或者空格就可以，不需要写其他的。回车后应该会正常开始下载。
+
+看到下面内容基本上就是安装完成了。rust环境就搭建好了。
+
+```
+Rust is installed now. Great!
+
+To get started you may need to restart your current shell.
+This would reload its PATH environment variable to include
+Cargo's bin directory (C:\Users\34656\.cargo\bin\bin).
+
+Press the Enter key to continue.
+```
