@@ -1,0 +1,15 @@
+created: 20230313145413095
+creator: 马不前
+modified: 20230313145550191
+modifier: 马不前
+tags: $:/tags/Stylesheet
+title: 本地霞鹜文楷字体
+tmap.id: 77ec946b-c57f-4986-ad6c-1894a562490d
+type: text/vnd.tiddlywiki
+
+@font-face {
+	font-family: "A";
+	font-style: normal;
+	font-weight: 400;
+	src: local("A"), url(<<datauri "LXGWWenKai-Regular.woff2">>) format("woff2");
+}

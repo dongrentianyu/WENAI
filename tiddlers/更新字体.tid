@@ -1,6 +1,6 @@
 created: 20230209192037780
 creator: 马不前
-modified: 20230307085640912
+modified: 20230313150145099
 modifier: 马不前
 tags: 
 title: 更新字体
@@ -23,3 +23,15 @@ type: text/vnd.tiddlywiki
 这是一个开源字体，效果还不错。具体配置可看本站条目[[霞鹜文楷]]。配置和上面描述的一样，需要加上`$:/tags/RawMarkup`标签，正文是一个link链接，直接复制就可以。type设置为`text/html`。再到[[$:/themes/tiddlywiki/vanilla/settings/fontfamily]]里添加一下。然后需要在标签层级里把`霞鹜文楷`放到最前。
 
 不放到最前是看不到效果的。点开标签就可以看到了。
+
+有一种本地内嵌字体的方式，具体可去太微中文社区网站查看。但这种本地内嵌字体最好是用nodejs版本。因为中文字体非常大，一般有7m大，单文件版本会一下子增加内存大小。
+
+我用的是[[本地霞鹜文楷字体]]，注意打开会有卡顿。里面引用了一个字体文件，格式是woff2格式的。之前我一直尝试直接用ttf格式字体，发现文件太大，而无法处理。也可能是太微不兼容。
+
+下面是一些可以转换格式的网站。
+
+https://products.aspose.app/font/zh/conversion/ttf-to-woff2
+
+https://convertio.co/zh/font-converter/
+
+https://cloudconvert.com/
