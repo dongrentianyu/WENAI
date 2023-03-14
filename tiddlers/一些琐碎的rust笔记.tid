@@ -1,0 +1,22 @@
+created: 20230314074057165
+creator: 马不前
+modified: 20230314074522521
+modifier: 马不前
+tags: rust笔记
+title: 一些琐碎的rust笔记
+tmap.id: 876e1272-3d1a-4a04-81e9-b824dd48fcb6
+type: text/vnd.tiddlywiki
+
+rust对大小写敏感，该大写的不能小写，否则会出错。
+
+另一个是一定要记住最后的结尾是`;`。不能程序运行会报错。
+
+下面是两种变量的形式，一种是未初始化，但要使用的情况。一种是未初始化，但也未被使用的。
+
+```rust
+fn main() {
+    let x: i32 = 5; // 未初始化，但被使用
+    let y: i32; // 未初始化，也未被使用
+    println!("x is equal to {}", x); 
+}
+```
