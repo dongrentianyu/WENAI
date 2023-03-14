@@ -1,18 +1,18 @@
 created: 20220809014459918
 creator: 马不前
 difficulty: 5
-due: 20221208102647474
+due: 20230315033128543
 grade: -1
 history: []
-interval: 0
+interval: 1
 lapses: 0
-modified: 20230228091326550
+modified: 20230314033128544
 modifier: 马不前
 reps: 1
 retrievability: 1
-review: 20221206102647474
+review: 20230314033128543
 stability: 2
-tags: 太微官方文档
+tags: 太微官方文档 ? .
 title: 太微使用小技巧
 tmap.id: 9501d200-0d71-4888-8a74-96c34ef68674
 type: text/vnd.tiddlywiki
