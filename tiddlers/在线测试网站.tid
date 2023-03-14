@@ -1,0 +1,10 @@
+created: 20230314084930325
+creator: 马不前
+modified: 20230314084938227
+modifier: 马不前
+tags: rust资源
+title: 在线测试网站
+tmap.id: cf1af573-0ade-433a-80e0-375b00ee9a9b
+type: text/vnd.tiddlywiki
+
+https://play.rust-lang.org/?version=stable&mode=debug&edition=2021
